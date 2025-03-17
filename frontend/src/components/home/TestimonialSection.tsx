@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
                   <div className="p-1">
                     <Card className="h-full">
                       <CardContent className="flex flex-col  justify-start p-6">
-                        <Quote className="w-8 h-8 text-red-600 mb-4" />
+                        <Quote className="w-8 h-8 text-green-600 mb-4" />
                         <p className="text-gray-700 mb-4 ">
                           {testimonial.quote}
                         </p>

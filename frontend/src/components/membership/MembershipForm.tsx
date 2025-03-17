@@ -108,12 +108,14 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ onSuccess }) => {
       try {
         const { memberships } = await getMemberships();
         setMembershipOptions(
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           memberships.map((membership: any) => ({
             ...membership,
             benefits: Array.isArray(membership.benefits)
               ? membership.benefits
               : membership.benefits
                   .split(",")
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   .map((benefit: any) => benefit.trim()),
           }))
         );
@@ -177,6 +179,7 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ onSuccess }) => {
   const isStepValid = (
     currentStep: number,
     values: IBookMembershipInput,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     errors: any
   ) => {
     switch (currentStep) {
@@ -297,7 +300,7 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ onSuccess }) => {
                   type="button"
                   onClick={() => setStep(step + 1)}
                   disabled={!isStepValid(step, values, errors)}
-                  className="bg-red-600 hover:bg-red-700 text-white"
+                  className="bg-green-600 hover:bg-green-700 text-white"
                 >
                   Next
                 </Button>
@@ -306,7 +309,7 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ onSuccess }) => {
                 <Button
                   type="submit"
                   disabled={!isValid}
-                  className="bg-red-600 hover:bg-red-700 text-white"
+                  className="bg-green-600 hover:bg-green-700 text-white"
                 >
                   Submit
                 </Button>

@@ -120,7 +120,7 @@ const EventPage: React.FC = () => {
               </div>
               <motion.button
                 onClick={() => setIsFormOpen(true)}
-                className="mt-6 w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors"
+                className="mt-6 w-full bg-green-100 text-white py-3 rounded-lg hover:bg-green-200 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

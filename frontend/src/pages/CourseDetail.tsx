@@ -48,7 +48,7 @@ const CourseDetail: React.FC = () => {
           <h2 className="text-2xl font-bold mb-4">
             {error || "Course Not Found"}
           </h2>
-          <Link to="/teachings" className="text-red-600 hover:text-red-700">
+          <Link to="/teachings" className="text-green-100 hover:text-green-200">
             Back to Teachings
           </Link>
         </div>
@@ -122,7 +122,7 @@ const CourseDetail: React.FC = () => {
                     key={index}
                     className="flex items-start space-x-2 text-gray-700"
                   >
-                    <CheckCircle className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-green-100 mt-1 flex-shrink-0" />
                     <span>{highlight}</span>
                   </div>
                 ))}
@@ -138,7 +138,7 @@ const CourseDetail: React.FC = () => {
                     key={index}
                     className="flex items-center space-x-2 text-gray-700"
                   >
-                    <Book className="w-5 h-5 text-red-600" />
+                    <Book className="w-5 h-5 text-green-100" />
                     <span>{material}</span>
                   </div>
                 ))}
@@ -178,7 +178,7 @@ const CourseDetail: React.FC = () => {
 
                 <button
                   onClick={() => setIsEnrollmentOpen(true)}
-                  className="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors"
+                  className="w-full bg-green-100 text-white py-3 rounded-lg hover:bg-green-200 transition-colors"
                 >
                   Enroll Now
                 </button>

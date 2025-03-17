@@ -25,7 +25,7 @@ const AboutMission: React.FC<AboutMissionProps> = ({ missionsSection }) => {
               iconMap[mission.icon as keyof typeof iconMap] || Target;
             return (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <IconComponent className="w-12 h-12 text-red-600 mb-4" />
+                <IconComponent className="w-12 h-12 text-green-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-4">{mission.title}</h3>
                 <p className="text-gray-700">{mission.description}</p>
               </div>

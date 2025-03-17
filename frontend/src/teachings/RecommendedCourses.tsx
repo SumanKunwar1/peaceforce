@@ -35,7 +35,7 @@ const RecommendedCourses: React.FC<RecommendedCoursesProps> = ({
 
   if (error) {
     return (
-      <div className="text-red-600 text-center mt-16">
+      <div className="text-green-600 text-center mt-16">
         Error loading recommended courses. Please try again later.
       </div>
     );
@@ -87,7 +87,7 @@ const RecommendedCourses: React.FC<RecommendedCoursesProps> = ({
                   <div className="text-sm text-gray-500">
                     {course.instructor.name}
                   </div>
-                  <span className="text-red-600 font-semibold">
+                  <span className="text-green-600 font-semibold">
                     Explore Now →
                   </span>
                 </div>

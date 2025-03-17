@@ -77,7 +77,7 @@ const BriefAboutSection = () => {
               viewport={{ once: false }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <BookOpen className="w-12 h-12 text-red-600 mb-6" />
+              <BookOpen className="w-12 h-12 text-green-600 mb-6" />
             </motion.div>
 
             {/* Title */}
@@ -111,7 +111,7 @@ const BriefAboutSection = () => {
             >
               <Link
                 to="/about"
-                className="inline-flex items-center text-red-600 hover:text-red-700 font-semibold group"
+                className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold group"
               >
                 Learn More About Us
                 <motion.svg

@@ -47,8 +47,8 @@ const ImpactSection: React.FC<ImpactSectionProps> = ({ impacts }) => {
                 viewport={{ once: false }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Icon className="w-12 h-12 text-red-600 mx-auto mb-4" />
-                <h3 className="text-3xl font-bold text-red-600 mb-2">
+                <Icon className="w-12 h-12 text-green-600 mx-auto mb-4" />
+                <h3 className="text-3xl font-bold text-green-600 mb-2">
                   {impact.number}
                 </h3>
                 <h4 className="text-xl font-semibold mb-2">{impact.title}</h4>

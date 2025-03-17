@@ -12,9 +12,12 @@ interface PaymentInformationFormProps {
   email: string;
   exchangeRate: number | null;
   currencyCode: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setFieldValue: (field: string, value: any) => void;
   values: IBookMembershipInput;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   errors: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   touched: any;
   onImageUpload: (file: File) => void;
 }
@@ -114,7 +117,7 @@ const PaymentInformationForm: React.FC<PaymentInformationFormProps> = ({
           ))}
         </RadioGroup>
         {errors.paymentMethod && touched.paymentMethod && (
-          <p className="text-red-500 text-sm mt-1">{errors.paymentMethod}</p>
+          <p className="text-green-500 text-sm mt-1">{errors.paymentMethod}</p>
         )}
       </div>
 
@@ -190,12 +193,12 @@ const PaymentInformationForm: React.FC<PaymentInformationFormProps> = ({
           onChange={handleImageChange}
           className={
             errors.paymentScreenshot && touched.paymentScreenshot
-              ? "border-red-500"
+              ? "border-green-500"
               : ""
           }
         />
         {errors.paymentScreenshot && touched.paymentScreenshot && (
-          <p className="text-red-500 text-sm mt-1">
+          <p className="text-green-500 text-sm mt-1">
             {errors.paymentScreenshot}
           </p>
         )}

@@ -19,6 +19,7 @@ const Blog = () => {
         const posts = await getBlogPosts();
         setBlogPosts(posts.blogPosts);
         setLoading(false);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError("Failed to fetch blog posts");
         setLoading(false);
@@ -35,7 +36,7 @@ const Blog = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-red-600">
+      <div className="min-h-screen flex items-center justify-center text-green-600">
         {error}
       </div>
     );
@@ -44,13 +45,13 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <motion.div
-        className="bg-gradient-to-r from-red-600 to-red-800 py-12"
+        className="bg-gradient-to-r from-green-600 to-green-800 py-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-white mb-4">Blog</h1>
-          <p className="text-red-100">
+          <p className="text-green-100">
             Insights and teachings from our community
           </p>
         </div>
@@ -78,7 +79,7 @@ const Blog = () => {
                 />
                 <div className="p-6">
                   <div className="flex items-center space-x-4 mb-4">
-                    <span className="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">
+                    <span className="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">
                       {post.category}
                     </span>
                     <div className="flex items-center text-gray-500 text-sm">
@@ -108,7 +109,7 @@ const Blog = () => {
                     </div>
                     <Link
                       to={`/blog/${post.id}`}
-                      className="text-red-600 hover:text-red-700"
+                      className="text-green-600 hover:text-green-700"
                     >
                       Read More →
                     </Link>

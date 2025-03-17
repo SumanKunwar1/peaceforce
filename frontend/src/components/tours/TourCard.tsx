@@ -54,7 +54,7 @@ const TourCard: React.FC<TourCardProps> = ({ tour }) => {
           </div>
 
           <div className="mt-4 flex justify-between items-center">
-            <span className="text-red-600 font-semibold">View Details</span>
+            <span className="text-green-600 font-semibold">View Details</span>
             <motion.svg
               className="w-5 h-5"
               fill="none"

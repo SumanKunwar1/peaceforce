@@ -180,7 +180,7 @@ const DonationSection: React.FC<DonationSectionProps> = ({ heroImage }) => {
                   viewport={{ once: false }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <item.icon className="w-8 h-8 mx-auto mb-2 text-red-500" />
+                  <item.icon className="w-8 h-8 mx-auto mb-2 text-green-500" />
                   <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
                   <p className="text-md text-gray-200">{item.text}</p>
                 </motion.div>
@@ -270,7 +270,7 @@ const DonationSection: React.FC<DonationSectionProps> = ({ heroImage }) => {
               {renderPaymentDetails()}
               <Button
                 type="submit"
-                className="w-full bg-red-600 text-white hover:bg-red-700"
+                className="w-full bg-green-600 text-white hover:bg-green-700"
               >
                 Donate Now
               </Button>
@@ -329,7 +329,7 @@ const DonationSection: React.FC<DonationSectionProps> = ({ heroImage }) => {
             )}
             <Button
               onClick={handleConfirmDonation}
-              className="w-full bg-red-600 text-white hover:bg-red-700"
+              className="w-full bg-green-600 text-white hover:bg-green-700"
             >
               Confirm Donation
             </Button>

@@ -30,6 +30,7 @@ const BlogDetails = () => {
         const fetchedPost = await getBlogPostById(id);
         setPost(fetchedPost.blogPost);
         setLoading(false);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError("Failed to fetch blog post");
         setLoading(false);
@@ -48,7 +49,7 @@ const BlogDetails = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Blog Post Not Found</h2>
-          <Link to="/blogs" className="text-red-600 hover:text-red-700">
+          <Link to="/blogs" className="text-green-600 hover:text-green-700">
             Back to Blog
           </Link>
         </div>
@@ -83,7 +84,7 @@ const BlogDetails = () => {
             <div className="max-w-4xl mx-auto px-4 text-white">
               <Link
                 to="/blog"
-                className="inline-flex items-center text-white mb-6 hover:text-red-200"
+                className="inline-flex items-center text-white mb-6 hover:text-green-200"
               >
                 <ArrowLeft className="w-5 h-5 mr-2" />
                 Back to Blog
@@ -137,11 +138,11 @@ const BlogDetails = () => {
                   <p className="text-gray-600 text-sm">{post.author.role}</p>
                 </div>
                 <div className="mt-8 space-y-4">
-                  <button className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
+                  <button className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
                     <Share2 className="w-4 h-4" />
                     Share
                   </button>
-                  <button className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-red-600 text-red-600 rounded-lg hover:bg-red-50">
+                  <button className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50">
                     <Bookmark className="w-4 h-4" />
                     Save
                   </button>

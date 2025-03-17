@@ -11,7 +11,7 @@ const missionContent = [
 
 const AboutMission = () => {
   return (
-    <section className="py-16 bg-red-800 text-white">
+    <section className="py-16 bg-green-800 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col items-center text-center">
           {missionContent.map((content) => {

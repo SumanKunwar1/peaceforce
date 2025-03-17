@@ -52,6 +52,7 @@ const Footer: React.FC = () => {
         description: "You have successfully subscribed to our newsletter.",
       });
       setEmail("");
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast({
         title: "Error",
@@ -88,15 +89,15 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-red-500" />
+                <MapPin className="h-5 w-5 text-green-500" />
                 <span>{infoSection?.location || "Loading..."}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-red-500" />
+                <Phone className="h-5 w-5 text-green-500" />
                 <span>{infoSection?.phoneNumber || "Loading..."}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-red-500" />
+                <Mail className="h-5 w-5 text-green-500" />
                 <span>{infoSection?.email || "Loading..."}</span>
               </div>
             </div>
@@ -110,10 +111,10 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               {quickNavigationLinks.map((link) => (
                 <li key={link.slug} className="flex items-center space-x-2">
-                  <ChevronRight className="h-4 w-4 text-red-500" />
+                  <ChevronRight className="h-4 w-4 text-green-500" />
                   <a
                     href={`/${link.slug}`}
-                    className="hover:text-red-500 transition-colors"
+                    className="hover:text-green-500 transition-colors"
                   >
                     {link.title}
                   </a>
@@ -131,10 +132,10 @@ const Footer: React.FC = () => {
                   key={"slug" in link ? link.slug : ""}
                   className="flex items-center space-x-2"
                 >
-                  <ChevronRight className="h-4 w-4 text-red-500" />
+                  <ChevronRight className="h-4 w-4 text-green-500" />
                   <a
                     href={`/${"slug" in link ? link.slug : ""}`}
-                    className="hover:text-red-500 transition-colors"
+                    className="hover:text-green-500 transition-colors"
                   >
                     {"title" in link ? link.title : ""}
                   </a>
@@ -155,12 +156,12 @@ const Footer: React.FC = () => {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-red-500"
+                className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-green-500"
                 required
               />
               <button
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded transition-colors"
+                className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
               >
                 Subscribe
               </button>
@@ -201,7 +202,7 @@ const Footer: React.FC = () => {
               {infoSection?.socialLinks?.youtube && (
                 <a
                   href={infoSection.socialLinks?.youtube}
-                  className="text-red-600 hover:text-red-800 transition-colors"
+                  className="text-green-600 hover:text-green-800 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

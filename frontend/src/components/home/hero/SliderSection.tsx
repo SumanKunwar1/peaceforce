@@ -69,7 +69,7 @@ const SliderSection: React.FC = () => {
   if (error) {
     return (
       <div className="flex items-center justify-center h-[600px]">
-        <p className="text-red-500">{error}</p>
+        <p className="text-green-500">{error}</p>
       </div>
     );
   }

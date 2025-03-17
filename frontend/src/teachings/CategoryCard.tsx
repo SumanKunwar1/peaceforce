@@ -48,7 +48,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         <div className="p-6">
           <h3 className="text-xl font-bold mb-2">{course.title}</h3>
           <p className="text-gray-600 mb-4">{course.description}</p>
-          <div className="flex items-center text-red-600 font-semibold group">
+          <div className="flex items-center text-green-600 font-semibold group">
             <span>Learn More</span>
             <motion.div
               initial={{ x: 0 }}

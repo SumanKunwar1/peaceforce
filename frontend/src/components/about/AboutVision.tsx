@@ -8,7 +8,7 @@ interface AboutVisionProps {
 
 const AboutVision: React.FC<AboutVisionProps> = ({ visionSection }) => {
   return (
-    <section className="py-16 bg-red-800 text-white">
+    <section className="py-16 bg-green-800 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-evenly flex-row items-center text-center">
           {visionSection.map((content, index) => {

@@ -65,12 +65,12 @@ const MembershipSelection: React.FC<MembershipSelectionProps> = ({
             <Card
               className={`h-full transition-all duration-300 ${
                 selectedType === option.id
-                  ? "border-red-600 shadow-lg bg-red-100 transform scale-105"
-                  : "hover:border-red-300"
+                  ? "border-green-600 shadow-lg bg-green-100 transform scale-105"
+                  : "hover:border-green-300"
               }`}
             >
               <CardHeader>
-                <CardTitle className="text-xl text-red-800">
+                <CardTitle className="text-xl text-green-800">
                   {option.name}
                 </CardTitle>
                 <CardDescription className="text-lg">
@@ -80,7 +80,7 @@ const MembershipSelection: React.FC<MembershipSelectionProps> = ({
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl text-red-900 font-bold mb-6">
+                <p className="text-2xl text-green-900 font-bold mb-6">
                   {getCurrencySymbol(currencyCode)}{" "}
                   {convertCurrency(option.fee)}
                 </p>
@@ -99,7 +99,7 @@ const MembershipSelection: React.FC<MembershipSelectionProps> = ({
                   variant={selectedType === option.id ? "default" : "outline"}
                   className={`w-full ${
                     selectedType === option.id
-                      ? "bg-red-600 hover:bg-red-700 text-white"
+                      ? "bg-green-600 hover:bg-green-700 text-white"
                       : ""
                   }`}
                 >

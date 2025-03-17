@@ -154,6 +154,7 @@ const AboutUs: React.FC = () => {
   };
 
   const renderSection = (
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     Component: React.FC<any>,
     sectionName: SectionKeys
   ) => (
@@ -217,7 +218,7 @@ const AboutUs: React.FC = () => {
         <div className="mt-8 flex justify-center">
           <motion.button
             onClick={saveUpdates}
-            className="bg-red-600 text-white px-6 py-2 rounded-lg"
+            className="bg-green-600 text-white px-6 py-2 rounded-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

@@ -5,7 +5,7 @@ const HeroButtons = () => {
     <div className="flex flex-wrap gap-4">
       <Link
         to="/teachings"
-        className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-colors"
+        className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors"
       >
         Enroll in a Course
       </Link>
@@ -17,7 +17,7 @@ const HeroButtons = () => {
       </Link>
       <Link
         to="/support"
-        className="bg-white text-red-600 hover:bg-red-50 px-6 py-3 rounded-lg transition-colors"
+        className="bg-white text-green-600 hover:bg-green-50 px-6 py-3 rounded-lg transition-colors"
       >
         Donate Now
       </Link>

@@ -11,7 +11,7 @@ interface SupportHeroProps {
 
 const SupportHero: React.FC<SupportHeroProps> = ({ heroData }) => {
   return (
-    <section className="relative py-12 bg-red-600">
+    <section className="relative py-12 bg-green-600">
       <div className="absolute inset-0 "></div>
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="flex items-center space-x-4">
@@ -26,7 +26,7 @@ const SupportHero: React.FC<SupportHeroProps> = ({ heroData }) => {
               {heroData.title || "Support Our Cause"}
             </motion.h1>
             <motion.p
-              className="text-red-100 text-lg"
+              className="text-green-100 text-lg"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
