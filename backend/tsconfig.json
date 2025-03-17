@@ -9,20 +9,6 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./build",
-    "baseUrl": "./",
-    "paths": {
-      "@src/*": ["src/*"],
-      "@config/*": ["src/config/*"],
-      "@middleware": ["src/middleware"],
-      "@models": ["src/models"],
-      "@utils/*": ["src/utils/*"],
-      "@app": ["src/app.ts"],
-      "@server": ["src/server.ts"],
-      "@typeInterface": ["src/types"],
-      "@controllers": ["src/controllers"],
-      "@services": ["src/services"],
-      "@routes": ["src/routes"]
-    },
     "rootDir": "./src"
   },
   "include": ["src/**/*.ts"],
