@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { donationService } from "@services";
+import { donationService } from "../services";
 
 export class DonationController {
   // Create a new donation

@@ -1,6 +1,6 @@
 import Joi from "joi";
 import { Request, Response, NextFunction } from "express";
-import { httpMessages } from "@utils/HttpMessage";
+import { httpMessages } from "../utils/HttpMessage";
 
 export const validateMembership = (
   req: Request,

@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { PageController } from "@controllers";
-import { isAuthenticated, validatePage } from "@middleware";
+import { PageController } from "../controllers";
+import { isAuthenticated, validatePage } from "../middleware";
 
 const router = Router();
 

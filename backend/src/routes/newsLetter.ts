@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { NewsLetterController } from "@controllers";
-import { isAuthenticated, validateAbout } from "@middleware";
+import { NewsLetterController } from "../controllers";
+import { isAuthenticated, validateAbout } from "../middleware";
 
 const router = Router();
 

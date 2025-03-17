@@ -1,11 +1,11 @@
-import { BookProgram, IBookProgramData, IUser, Program } from "@models";
-import { userService, programService } from "@services";
-import { IBookProgramFormInput, IBookProgramFormUpdate } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
+import { BookProgram, IBookProgramData, IUser, Program } from "../models";
+import { userService, programService } from "../services";
+import { IBookProgramFormInput, IBookProgramFormUpdate } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
 import mongoose from "mongoose";
 
-import { sendEmail } from "@config/BrevoMail";
-import { ADMIN_EMAIL } from "@config/env";
+import { sendEmail } from "../config/BrevoMail";
+import { ADMIN_EMAIL } from "../config/env";
 
 class BookProgramFormService {
   async createBookProgram(

@@ -1,4 +1,4 @@
-import { IUserInput } from "@typeInterface";
+import { IUserInput } from "./index";
 import { Types } from "mongoose";
 
 export interface IEnrollmentFormInput

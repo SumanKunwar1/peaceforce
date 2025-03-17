@@ -1,7 +1,7 @@
-import { IUser, User } from "@models";
-import { IUserInput } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
-import { deleteFile } from "@utils/deleteFile";
+import { IUser, User } from "../models";
+import { IUserInput } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
+import { deleteFile } from "../utils/deleteFile";
 class UserService {
   async createUser(userData: IUserInput): Promise<IUser> {
     try {

@@ -1,4 +1,4 @@
-import { httpMessages } from "@src/utils/HttpMessage";
+import { httpMessages } from "../utils/HttpMessage";
 import { Request, Response, NextFunction } from "express";
 
 /**

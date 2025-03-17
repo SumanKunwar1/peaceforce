@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { GalleryController } from "@controllers";
-import upload from "@config/multerConfig";
+import { GalleryController } from "../controllers";
+import upload from "../config/multerConfig";
 import {
   appendFile,
   isAuthenticated,
@@ -8,7 +8,7 @@ import {
   validateGalleryEventInsert,
   validateGallery,
   trackFilesForDeletion,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 

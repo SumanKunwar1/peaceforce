@@ -1,8 +1,8 @@
-import { IProgramInput } from "@src/types";
-import { Program, IProgram, BookProgram } from "@models";
-import { deleteFile } from "@utils/deleteFile";
-import { httpMessages } from "@utils/HttpMessage";
-import { bookProgramService } from "@services"; // You can modify this import based on your actual logic
+import { IProgramInput } from "../types";
+import { Program, IProgram, BookProgram } from "../models";
+import { deleteFile } from "../utils/deleteFile";
+import { httpMessages } from "../utils/HttpMessage";
+import { bookProgramService } from "../services"; // You can modify this import based on your actual logic
 
 class ProgramService {
   async createProgram(programData: IProgramInput): Promise<IProgram> {

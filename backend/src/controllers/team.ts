@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { teamService } from "@services";
+import { teamService } from "../services";
 
 export class TeamController {
   static async createTeamMember(

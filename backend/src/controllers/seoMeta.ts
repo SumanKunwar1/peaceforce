@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { seoMetaService } from "@services";
+import { seoMetaService } from "../services";
 
 export class SeoMetaController {
   static async getSeoMeta(req: Request, res: Response, next: NextFunction) {

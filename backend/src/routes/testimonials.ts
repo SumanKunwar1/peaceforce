@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { TestimonialController } from "@controllers";
-import { validateTestimonial } from "@middleware";
+import { TestimonialController } from "../controllers";
+import { validateTestimonial } from "../middleware";
 
 const router = Router();
 

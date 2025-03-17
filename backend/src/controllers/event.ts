@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { eventService } from "@services"; // Importing the event service
+import { eventService } from "../services"; // Importing the event service
 
 export class EventController {
   // Create a new event

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { galleryCategoryService } from "@services";
-import { httpMessages } from "@utils/HttpMessage";
+import { galleryCategoryService } from "../services";
+import { httpMessages } from "../utils/HttpMessage";
 
 export class GalleryController {
   // Create a new gallery category

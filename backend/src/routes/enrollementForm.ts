@@ -1,18 +1,14 @@
 import { Router } from "express";
-import { EnrollmentController } from "@controllers";
+import { EnrollmentController } from "../controllers";
 import {
   isAuthenticated,
   validateEnrollmentForm,
   validateEnrollmentUpdate,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 
-router.post(
-  "/",
-  validateEnrollmentForm,
-  EnrollmentController.createEnrollment
-);
+router.post("/", validateEnrollmentForm, EnrollmentController.createEnrollment);
 
 router.patch(
   "/:enrollmentId",
@@ -21,9 +17,13 @@ router.patch(
   EnrollmentController.updateEnrollment
 );
 
-router.get("/",isAuthenticated, EnrollmentController.getEnrollments);
+router.get("/", isAuthenticated, EnrollmentController.getEnrollments);
 
-router.get("/:enrollmentId",isAuthenticated, EnrollmentController.getEnrollmentById);
+router.get(
+  "/:enrollmentId",
+  isAuthenticated,
+  EnrollmentController.getEnrollmentById
+);
 
 router.delete(
   "/:enrollmentId",

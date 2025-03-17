@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { FAQController } from "@controllers";
-import { isAuthenticated, validateFAQ, validateFAQUpdate } from "@middleware";
+import { FAQController } from "../controllers";
+import { isAuthenticated, validateFAQ, validateFAQUpdate } from "../middleware";
 
 const router = Router();
 

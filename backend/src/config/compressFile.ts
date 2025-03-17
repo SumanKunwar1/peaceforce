@@ -1,8 +1,8 @@
 import sharp, { FormatEnum } from "sharp";
 import fs from "fs";
 import path from "path";
-import { uploadPath } from "@utils/filePath";
-import { deleteFile } from "@utils/deleteFile";
+import { uploadPath } from "../utils/filePath";
+import { deleteFile } from "../utils/deleteFile";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 const compressAndValidateImage = async (

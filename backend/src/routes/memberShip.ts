@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { MembershipController } from "@controllers";
-import { isAuthenticated, validateMembership } from "@middleware";
+import { MembershipController } from "../controllers";
+import { isAuthenticated, validateMembership } from "../middleware";
 
 const router = Router();
 

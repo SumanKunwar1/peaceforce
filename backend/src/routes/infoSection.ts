@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { InfoSectionController } from "@controllers";
+import { InfoSectionController } from "../controllers";
 import {
   isAuthenticated,
   validateInfoSection,
   parseJsonFields,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { bookingFormService } from "@services";
+import { bookingFormService } from "../services";
 
 export class BookingFormController {
   static async createBookingForm(

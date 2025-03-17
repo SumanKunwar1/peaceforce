@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { JobPostController } from "@controllers";
-import { isAuthenticated, validateJobPost } from "@middleware";
+import { JobPostController } from "../controllers";
+import { isAuthenticated, validateJobPost } from "../middleware";
 
 const router = Router();
 

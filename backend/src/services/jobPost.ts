@@ -1,7 +1,7 @@
-import { IJobPost, JobPost } from "@models";
-import { IJobPostInput } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
-import { userService } from "@services";
+import { IJobPost, JobPost } from "../models";
+import { IJobPostInput } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
+import { userService } from "../services";
 
 class JobPostService {
   async createJobPost(jobData: IJobPostInput): Promise<IJobPost> {

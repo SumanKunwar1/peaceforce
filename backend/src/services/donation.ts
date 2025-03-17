@@ -1,7 +1,7 @@
-import { Donation, IDonationData, IUser } from "@models";
-import { userService } from "@services";
-import { IDonationInput } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
+import { Donation, IDonationData, IUser } from "../models";
+import { userService } from "../services";
+import { IDonationInput } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
 import mongoose from "mongoose";
 
 class DonationFormService {

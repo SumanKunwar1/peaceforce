@@ -1,18 +1,14 @@
 import { Router } from "express";
-import { BookingFormController } from "@controllers";
+import { BookingFormController } from "../controllers";
 import {
   isAuthenticated,
   validateBookingForm,
   validateBookingUpdate,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 
-router.post(
-  "/",
-  validateBookingForm,
-  BookingFormController.createBookingForm
-);
+router.post("/", validateBookingForm, BookingFormController.createBookingForm);
 
 router.patch(
   "/:bookingFormId",
@@ -21,11 +17,13 @@ router.patch(
   BookingFormController.updateBookingForm
 );
 
-router.get("/",
-  isAuthenticated, BookingFormController.getBookingForms);
+router.get("/", isAuthenticated, BookingFormController.getBookingForms);
 
-router.get("/:bookingFormId",
-  isAuthenticated, BookingFormController.getBookingFormById);
+router.get(
+  "/:bookingFormId",
+  isAuthenticated,
+  BookingFormController.getBookingFormById
+);
 
 router.delete(
   "/:bookingFormId",

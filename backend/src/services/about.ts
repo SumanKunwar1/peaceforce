@@ -1,7 +1,7 @@
-import { IAbout, About } from "@models"; // Assuming these are your models
-import { IAboutInput } from "@typeInterface"; // Interface for input data
-import { httpMessages } from "@utils/HttpMessage";
-import { deleteFile } from "@utils/deleteFile";
+import { IAbout, About } from "../models/index"; // Assuming these are your models
+import { IAboutInput } from "../types/index"; // Interface for input data
+import { httpMessages } from "../utils/HttpMessage";
+import { deleteFile } from "../utils/deleteFile";
 
 class AboutService {
   // Create a new About section

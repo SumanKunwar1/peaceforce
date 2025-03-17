@@ -1,6 +1,6 @@
-import { Testimonial, ITestimonial } from "@models";
-import { httpMessages } from "@utils/HttpMessage";
-import { ITestimonialInput } from "@typeInterface";
+import { Testimonial, ITestimonial } from "../models";
+import { httpMessages } from "../utils/HttpMessage";
+import { ITestimonialInput } from "../types";
 
 class TestimonialService {
   // Get all testimonials

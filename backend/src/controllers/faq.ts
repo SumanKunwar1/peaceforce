@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { faqService } from "@services";
+import { faqService } from "../services";
 
 export class FAQController {
   static async createFAQ(req: Request, res: Response, next: NextFunction) {

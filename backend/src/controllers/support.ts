@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { supportService } from "@services"; // Importing the support service
+import { supportService } from "../services"; // Importing the support service
 
 export class SupportController {
   // Fetch the single support document

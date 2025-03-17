@@ -1,7 +1,7 @@
-import { IEventInput } from "@src/types";
-import { Event, IEvent, BookEvent } from "@models";
-import { deleteFile } from "@utils/deleteFile";
-import { httpMessages } from "@utils/HttpMessage";
+import { IEventInput } from "../types";
+import { Event, IEvent, BookEvent } from "../models";
+import { deleteFile } from "../utils/deleteFile";
+import { httpMessages } from "../utils/HttpMessage";
 import { bookEventService } from "./bookEventForm";
 
 class EventService {

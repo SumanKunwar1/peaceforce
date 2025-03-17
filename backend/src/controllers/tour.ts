@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { tourService } from "@services";
+import { tourService } from "../services";
 
 export class TourController {
   static async createTour(req: Request, res: Response, next: NextFunction) {

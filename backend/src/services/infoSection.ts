@@ -1,6 +1,6 @@
-import { IInfoSectionData, InfoSection } from "@models";
-import { httpMessages } from "@utils/HttpMessage";
-import { IInfoSectionInput } from "@typeInterface";
+import { IInfoSectionData, InfoSection } from "../models";
+import { httpMessages } from "../utils/HttpMessage";
+import { IInfoSectionInput } from "../types";
 
 class InfoSectionService {
   async getInfoSection(): Promise<IInfoSectionData | null> {

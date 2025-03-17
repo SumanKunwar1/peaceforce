@@ -1,7 +1,7 @@
-import { ITour, Tour, BookingForm } from "@models";
-import { ITourInput } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
-import { deleteFile } from "@utils/deleteFile";
+import { ITour, Tour, BookingForm } from "../models";
+import { ITourInput } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
+import { deleteFile } from "../utils/deleteFile";
 import { bookingFormService } from "./bookingForm";
 
 class TourService {

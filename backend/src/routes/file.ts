@@ -1,5 +1,5 @@
 import { Router, Request, Response } from "express";
-import { serveFile } from "@utils/serveFile";
+import { serveFile } from "../utils/serveFile";
 
 const router = Router();
 

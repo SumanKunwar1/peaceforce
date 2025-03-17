@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { SliderController } from "@controllers";
-import upload from "@config/multerConfig";
+import { SliderController } from "../controllers";
+import upload from "../config/multerConfig";
 import {
   isAuthenticated,
   parseJsonFields,
   trackFilesForDeletion,
   appendFile,
   validateSlider,
-} from "@middleware";
-import { MAX_SLIDER_SIZE } from "@config/env";
+} from "../middleware";
+import { MAX_SLIDER_SIZE } from "../config/env";
 
 const router = Router();
 

@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import { compressImageMiddleware } from "@config/compressFile";
-import { MAX_IMAGE_SIZE } from "@config/env";
-import { httpMessages } from "@utils/HttpMessage";
+import { compressImageMiddleware } from "../config/compressFile";
+import { MAX_IMAGE_SIZE } from "../config/env";
+import { httpMessages } from "../utils/HttpMessage";
 
 /**
  * To append the file to body and also compress the files simultaneously

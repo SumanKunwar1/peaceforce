@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { DonationController } from "@controllers";
-import { isAuthenticated, validateDonation } from "@middleware";
-import upload from "@config/multerConfig";
-import { trackFilesForDeletion, appendFile } from "@middleware";
+import { DonationController } from "../controllers";
+import { isAuthenticated, validateDonation } from "../middleware";
+import upload from "../config/multerConfig";
+import { trackFilesForDeletion, appendFile } from "../middleware";
 
 const router = Router();
 

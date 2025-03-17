@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { blogPostService } from "@services";
+import { blogPostService } from "../services";
 
 export class BlogPostController {
   static async createBlogPost(req: Request, res: Response, next: NextFunction) {

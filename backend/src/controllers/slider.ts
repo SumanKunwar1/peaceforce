@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { sliderService } from "@services";
+import { sliderService } from "../services";
 export class SliderController {
   // Create a new slider
   static async createSlider(req: Request, res: Response, next: NextFunction) {

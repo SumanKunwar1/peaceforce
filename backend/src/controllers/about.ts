@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { aboutService } from "@services"; // Assuming you have a service for About
+import { aboutService } from "../services"; // Assuming you have a service for About
 
 export class AboutController {
   // Create a new About section

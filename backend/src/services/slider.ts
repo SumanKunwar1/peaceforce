@@ -1,7 +1,7 @@
-import { ISliderInput } from "@src/types"; // Adjust the import as necessary
-import { Slider } from "@models"; // Assuming you have a Slider model
-import { deleteFile } from "@utils/deleteFile"; // Assuming you have a utility function for deleting files
-import { httpMessages } from "@utils/HttpMessage"; // Custom error handling utility
+import { ISliderInput } from "../types"; // Adjust the import as necessary
+import { Slider } from "../models"; // Assuming you have a Slider model
+import { deleteFile } from "../utils/deleteFile"; // Assuming you have a utility function for deleting files
+import { httpMessages } from "../utils/HttpMessage"; // Custom error handling utility
 
 class SliderService {
   // Create a new slider

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { statsService } from "@services";
+import { statsService } from "../services";
 
 export class StatsController {
   // Create a new stat
