@@ -1,4 +1,4 @@
-import { NewsLetter, INewsLetter } from "@models";
+import { NewsLetter, INewsLetter } from "../models";
 import mongoose from "mongoose";
 
 class NewsLetterService {

@@ -2,7 +2,7 @@ import { Response } from "express";
 import path from "path";
 import fs from "fs";
 import mime from "mime-types";
-import { uploadPath } from "@utils/filePath";
+import { uploadPath } from "../utils/filePath";
 
 export function serveFile(
   filename: string,

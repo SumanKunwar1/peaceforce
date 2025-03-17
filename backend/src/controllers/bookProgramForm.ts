@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { bookProgramService } from "@services";
+import { bookProgramService } from "../services";
 
 export class BookProgramController {
   // Create a new program booking

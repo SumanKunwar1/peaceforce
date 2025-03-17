@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { ContactController } from "@controllers";
-import { isAuthenticated, validateContact } from "@middleware";
+import { ContactController } from "../controllers";
+import { isAuthenticated, validateContact } from "../middleware";
 
 const router = Router();
 

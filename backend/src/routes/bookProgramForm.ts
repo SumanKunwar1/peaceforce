@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { BookProgramController } from "@controllers";
+import { BookProgramController } from "../controllers";
 import {
   isAuthenticated,
   validateProgramBookingForm,
   validateProgramBookingUpdate,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 
@@ -21,11 +21,13 @@ router.patch(
   BookProgramController.updateBookProgram
 );
 
-router.get("/",
-  isAuthenticated, BookProgramController.getBookPrograms);
+router.get("/", isAuthenticated, BookProgramController.getBookPrograms);
 
-router.get("/:bookingId", 
-  isAuthenticated,BookProgramController.getBookProgramById);
+router.get(
+  "/:bookingId",
+  isAuthenticated,
+  BookProgramController.getBookProgramById
+);
 
 router.delete(
   "/:bookingId",

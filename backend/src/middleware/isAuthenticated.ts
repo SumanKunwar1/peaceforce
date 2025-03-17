@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "@config/env";
-import { httpMessages } from "@utils/HttpMessage";
+import { JWT_SECRET } from "../config/env";
+import { httpMessages } from "../utils/HttpMessage";
 
 export const isAuthenticated = (
   req: Request,

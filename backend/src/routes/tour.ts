@@ -1,13 +1,13 @@
 import { Router } from "express";
-import { TourController } from "@controllers";
-import upload from "@config/multerConfig";
+import { TourController } from "../controllers";
+import upload from "../config/multerConfig";
 import {
   appendFile,
   isAuthenticated,
   validateTour,
   trackFilesForDeletion,
   parseJsonFields,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 

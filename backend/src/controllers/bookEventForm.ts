@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { bookEventService } from "@services";
+import { bookEventService } from "../services";
 
 export class BookEventController {
   static async createBookEvent(

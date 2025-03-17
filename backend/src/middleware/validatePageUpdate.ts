@@ -1,6 +1,6 @@
 import Joi from "joi";
 import { Request, Response, NextFunction } from "express";
-import { httpMessages } from "@utils/HttpMessage";
+import { httpMessages } from "../utils/HttpMessage";
 
 const pageValidationSchema = Joi.object({
   title: Joi.string().trim().optional(),

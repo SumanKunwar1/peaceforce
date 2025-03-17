@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { bookMembershipService } from "@services";
+import { bookMembershipService } from "../services";
 
 export class BookMembershipController {
   // Create a new membership booking

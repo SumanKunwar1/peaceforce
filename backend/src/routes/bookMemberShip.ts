@@ -1,13 +1,13 @@
 import { Router } from "express";
-import { BookMembershipController } from "@controllers";
-import upload from "@config/multerConfig";
+import { BookMembershipController } from "../controllers";
+import upload from "../config/multerConfig";
 import {
   isAuthenticated,
   validateBookMembership,
   validateBookMembershipUpdate,
   appendFile,
   trackFilesForDeletion,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 

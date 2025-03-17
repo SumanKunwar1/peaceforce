@@ -1,7 +1,7 @@
-import { IBlogPost, BlogPost } from "@models";
-import { IBlogPostInput } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
-import { deleteFile } from "@utils/deleteFile";
+import { IBlogPost, BlogPost } from "../models";
+import { IBlogPostInput } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
+import { deleteFile } from "../utils/deleteFile";
 
 class BlogPostService {
   async createBlogPost(blogPostData: IBlogPostInput): Promise<IBlogPost> {

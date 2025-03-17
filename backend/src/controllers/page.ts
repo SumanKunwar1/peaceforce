@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { pageService } from "@services"; // Import the corresponding service
+import { pageService } from "../services"; // Import the corresponding service
 
 export class PageController {
   static async createPage(req: Request, res: Response, next: NextFunction) {

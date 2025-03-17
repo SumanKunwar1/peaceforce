@@ -1,6 +1,6 @@
-import { Contact, IContactData } from "@models";
-import { userService } from "@services";
-import { IContactInput } from "@typeInterface";
+import { Contact, IContactData } from "../models";
+import { userService } from "../services";
+import { IContactInput } from "../types";
 import mongoose from "mongoose";
 
 class ContactService {

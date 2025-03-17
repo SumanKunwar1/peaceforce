@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { contactService } from "@services";
+import { contactService } from "../services";
 
 export class ContactController {
   static async createContact(req: Request, res: Response, next: NextFunction) {

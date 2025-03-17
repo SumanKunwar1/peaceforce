@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
-import { corsOptions } from "@config/cors";
-import router from "@routes";
-import { handleResponse } from "@utils/handleResponse"; // Import handleResponse
-import { handleError } from "@utils/handleError";
+import { corsOptions } from "./config/cors";
+import router from "./routes";
+import { handleResponse } from "./utils/handleResponse"; // Import handleResponse
+import { handleError } from "./utils/handleError";
 
 const app = express();
 app.use(express.json({ limit: "10mb" })); // Increase limit for JSON payload to 10MB

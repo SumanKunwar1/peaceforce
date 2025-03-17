@@ -1,8 +1,8 @@
-import { ICourseInput } from "@src/types";
-import { Course, ICourse, EnrollmentForm } from "@models";
-import { deleteFile } from "@utils/deleteFile";
-import { httpMessages } from "@utils/HttpMessage";
-import { enrollmentService } from "@services";
+import { ICourseInput } from "../types";
+import { Course, ICourse, EnrollmentForm } from "../models";
+import { deleteFile } from "../utils/deleteFile";
+import { httpMessages } from "../utils/HttpMessage";
+import { enrollmentService } from "../services";
 
 class CourseCategoryService {
   // Create a new course category

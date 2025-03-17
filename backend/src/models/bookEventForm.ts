@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document, Model, Types } from "mongoose";
-import { IUser } from "@models";
+import { IUser } from "./index";
 
 export interface IBookEventData extends Document {
   _id: Types.ObjectId;

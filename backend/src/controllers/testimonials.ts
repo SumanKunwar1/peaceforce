@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { testimonialService } from "@services";
+import { testimonialService } from "../services";
 
 export class TestimonialController {
   // Get all testimonials

@@ -1,4 +1,4 @@
-import { userService } from "@services";
+import { userService } from "../services";
 import { User } from "../models";
 
 const adminUserData = {

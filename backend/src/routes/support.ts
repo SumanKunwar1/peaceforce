@@ -1,13 +1,13 @@
 import { Router } from "express";
-import { SupportController } from "@controllers";
-import upload from "@config/multerConfig";
+import { SupportController } from "../controllers";
+import upload from "../config/multerConfig";
 import {
   appendFile,
   isAuthenticated,
   validateSupport,
   trackFilesForDeletion,
   parseJsonFields,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 

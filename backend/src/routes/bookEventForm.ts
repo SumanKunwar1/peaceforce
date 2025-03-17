@@ -1,19 +1,15 @@
 import { Router } from "express";
-import { BookEventController } from "@controllers";
+import { BookEventController } from "../controllers";
 import {
   isAuthenticated,
   validateEventBookingForm,
   validateEventBookingUpdate,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 
 // Create a new booking form
-router.post(
-  "/",
-  validateEventBookingForm,
-  BookEventController.createBookEvent
-);
+router.post("/", validateEventBookingForm, BookEventController.createBookEvent);
 
 // Update an existing booking form
 router.patch(
@@ -24,12 +20,14 @@ router.patch(
 );
 
 // Get all booking forms
-router.get("/",
-  isAuthenticated, BookEventController.getBookEvents);
+router.get("/", isAuthenticated, BookEventController.getBookEvents);
 
 // Get a booking form by its ID
-router.get("/:bookingId",
-  isAuthenticated, BookEventController.getBookEventById);
+router.get(
+  "/:bookingId",
+  isAuthenticated,
+  BookEventController.getBookEventById
+);
 
 // Delete a booking form
 router.delete(

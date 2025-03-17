@@ -1,7 +1,7 @@
-import { ITeamData, Team } from "@models";
-import { ITeamInput } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
-import { deleteFile } from "@utils/deleteFile";
+import { ITeamData, Team } from "../models";
+import { ITeamInput } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
+import { deleteFile } from "../utils/deleteFile";
 
 class TeamService {
   async createTeamMember(teamMemberData: ITeamInput): Promise<ITeamData> {

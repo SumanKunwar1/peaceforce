@@ -1,6 +1,6 @@
-import { IPageData, Page } from "@models";
-import { httpMessages } from "@utils/HttpMessage";
-import { IpageInput } from "@typeInterface";
+import { IPageData, Page } from "../models";
+import { httpMessages } from "../utils/HttpMessage";
+import { IpageInput } from "../types";
 
 class PageService {
   async createPage(pageData: IpageInput): Promise<IPageData> {

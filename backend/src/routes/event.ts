@@ -1,15 +1,15 @@
 import { Router } from "express";
-import { EventController } from "@controllers";
-import { handleResponse } from "@utils/handleResponse";
-import { handleError } from "@utils/handleError";
-import upload from "@config/multerConfig";
+import { EventController } from "../controllers";
+import { handleResponse } from "../utils/handleResponse";
+import { handleError } from "../utils/handleError";
+import upload from "../config/multerConfig";
 import {
   appendFile,
   isAuthenticated,
   parseJsonFields,
   validateEvent,
   trackFilesForDeletion,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 

@@ -1,4 +1,4 @@
-import { IUserInput } from "@typeInterface";
+import { IUserInput } from "./index";
 
 export interface IDonationInput
   extends Pick<

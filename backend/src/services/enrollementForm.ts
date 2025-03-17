@@ -1,10 +1,15 @@
-import { EnrollmentForm, Course, IEnrollmentFormData, ICourse } from "@models";
-import { userService } from "@services";
-import { IEnrollmentFormInput, IEnrollementUpdate } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
+import {
+  EnrollmentForm,
+  Course,
+  IEnrollmentFormData,
+  ICourse,
+} from "../models";
+import { userService } from "../services";
+import { IEnrollmentFormInput, IEnrollementUpdate } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
 import mongoose from "mongoose";
-import { sendEmail } from "@config/BrevoMail";
-import { ADMIN_EMAIL } from "@config/env";
+import { sendEmail } from "../config/BrevoMail";
+import { ADMIN_EMAIL } from "../config/env";
 
 class EnrollmentService {
   async createEnrollment(

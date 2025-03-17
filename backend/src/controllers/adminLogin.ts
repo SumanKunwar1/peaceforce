@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { adminLoginService } from "@services";
+import { adminLoginService } from "../services";
 
 export class AdminLoginController {
   // Controller for admin login

@@ -1,6 +1,6 @@
-import { IMembership, Membership } from "@models";
-import { IMembershipInput } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
+import { IMembership, Membership } from "../models";
+import { IMembershipInput } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
 
 class MembershipService {
   async createMembership(

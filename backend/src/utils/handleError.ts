@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { deleteFile } from "@utils/deleteFile";
+import { deleteFile } from "../utils/deleteFile";
 
 function handleError(
   err: any,

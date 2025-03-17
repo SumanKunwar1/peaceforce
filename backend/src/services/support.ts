@@ -1,7 +1,7 @@
-import { ISupportInput } from "@src/types";
-import { Support, ISupport } from "@models";
-import { deleteFile } from "@utils/deleteFile";
-import { httpMessages } from "@utils/HttpMessage";
+import { ISupportInput } from "../types";
+import { Support, ISupport } from "../models";
+import { deleteFile } from "../utils/deleteFile";
+import { httpMessages } from "../utils/HttpMessage";
 
 class SupportService {
   // Fetch the single support document

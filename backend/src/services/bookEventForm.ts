@@ -1,10 +1,10 @@
-import { BookEvent, IBookEventData, Event, IUser } from "@models";
-import { userService } from "@services";
-import { IBookEventFormInput, IBookEventFormUpdate } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
+import { BookEvent, IBookEventData, Event, IUser } from "../models";
+import { userService } from "../services/index";
+import { IBookEventFormInput, IBookEventFormUpdate } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
 import mongoose from "mongoose";
-import { sendEmail } from "@config/BrevoMail";
-import { ADMIN_EMAIL } from "@config/env";
+import { sendEmail } from "../config/BrevoMail";
+import { ADMIN_EMAIL } from "../config/env";
 
 class BookEventFormService {
   async createBookEvent(

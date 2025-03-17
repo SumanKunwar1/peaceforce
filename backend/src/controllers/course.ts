@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { courseCategoryService } from "@services"; // This should be the updated import
+import { courseCategoryService } from "../services"; // This should be the updated import
 
 export class CourseController {
   // Create a new course category

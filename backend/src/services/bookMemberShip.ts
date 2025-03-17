@@ -1,12 +1,12 @@
-import { BookMembership, IBookMembership, Membership } from "@models";
-import { userService } from "@services";
-import { IBookMembershipInput, IBookMembershipUpdate } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
-import { deleteFile } from "@utils/deleteFile"; // Utility to delete old images
+import { BookMembership, IBookMembership, Membership } from "../models";
+import { userService } from "../services";
+import { IBookMembershipInput, IBookMembershipUpdate } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
+import { deleteFile } from "../utils/deleteFile"; // Utility to delete old images
 import mongoose from "mongoose";
 
-import { sendEmail } from "@config/BrevoMail";
-import { ADMIN_EMAIL } from "@config/env";
+import { sendEmail } from "../config/BrevoMail";
+import { ADMIN_EMAIL } from "../config/env";
 
 class BookMembershipService {
   async createBookMembership(

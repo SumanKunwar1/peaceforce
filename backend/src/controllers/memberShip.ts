@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { membershipService } from "@services";
+import { membershipService } from "../services";
 
 export class MembershipController {
   static async createMembership(

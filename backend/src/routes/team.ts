@@ -1,13 +1,13 @@
 import { Router } from "express";
-import { TeamController } from "@controllers";
-import upload from "@config/multerConfig";
+import { TeamController } from "../controllers";
+import upload from "../config/multerConfig";
 import {
   appendFile,
   isAuthenticated,
   validateTeam,
   trackFilesForDeletion,
   parseJsonFields,
-} from "@middleware";
+} from "../middleware";
 
 const router = Router();
 

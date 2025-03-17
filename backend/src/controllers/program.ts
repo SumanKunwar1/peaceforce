@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { programService } from "@services"; // Importing the program service
+import { programService } from "../services"; // Importing the program service
 
 export class ProgramController {
   static async createProgram(req: Request, res: Response, next: NextFunction) {

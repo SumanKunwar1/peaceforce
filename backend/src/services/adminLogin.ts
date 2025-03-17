@@ -1,7 +1,7 @@
-import { User } from "@models";
-import { httpMessages } from "@utils/HttpMessage";
-import { isPasswordMatch } from "@utils/password";
-import { GenerateAuthtoken } from "@utils/token";
+import { User } from "../models/index";
+import { httpMessages } from "../utils/HttpMessage";
+import { isPasswordMatch } from "../utils/password";
+import { GenerateAuthtoken } from "../utils/token";
 
 class AdminLoginService {
   async loginAdmin(email: string, password: string) {

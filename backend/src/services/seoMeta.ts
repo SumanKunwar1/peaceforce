@@ -1,6 +1,6 @@
-import { SeoMeta, ISeoMeta } from "@models";
-import { httpMessages } from "@utils/HttpMessage";
-import { ISeoMetaInput, ISeoMetaUpdate } from "@typeInterface";
+import { SeoMeta, ISeoMeta } from "../models";
+import { httpMessages } from "../utils/HttpMessage";
+import { ISeoMetaInput, ISeoMetaUpdate } from "../types";
 
 class SeoMetaService {
   async getSeoMeta(): Promise<ISeoMeta[] | null> {

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { infoSectionService } from "@services";
+import { infoSectionService } from "../services";
 
 export class InfoSectionController {
   static async getInfoSection(req: Request, res: Response, next: NextFunction) {

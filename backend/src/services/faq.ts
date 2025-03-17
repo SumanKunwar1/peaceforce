@@ -1,7 +1,7 @@
-import { FAQ, IFAQ } from "@models";
-import { httpMessages } from "@utils/HttpMessage";
+import { FAQ, IFAQ } from "../models";
+import { httpMessages } from "../utils/HttpMessage";
 import mongoose from "mongoose";
-import { IFaqInput, IFaqUpdate } from "@typeInterface";
+import { IFaqInput, IFaqUpdate } from "../types";
 
 class FAQService {
   async createFAQ(faqData: IFaqInput): Promise<IFAQ> {

@@ -1,6 +1,6 @@
 import Joi from "joi";
 import { Request, Response, NextFunction } from "express";
-import { httpMessages } from "@utils/HttpMessage";
+import { httpMessages } from "../utils/HttpMessage";
 
 // Slug regex: Only allows lowercase letters, numbers, and hyphens (-), no spaces or special characters
 const slugRegex = /^[a-z0-9]+(-[a-z0-9]+)*$/;

@@ -1,10 +1,10 @@
-import { BookingForm, Tour, IBookingFormData, IUser, ITour } from "@models";
-import { userService } from "@services";
-import { IBookingFormInput, IBookingFormUpdate } from "@typeInterface";
-import { httpMessages } from "@utils/HttpMessage";
+import { BookingForm, Tour, IBookingFormData, IUser, ITour } from "../models";
+import { userService } from "../services";
+import { IBookingFormInput, IBookingFormUpdate } from "../types";
+import { httpMessages } from "../utils/HttpMessage";
 import mongoose from "mongoose";
-import { sendEmail } from "@config/BrevoMail";
-import { ADMIN_EMAIL } from "@config/env";
+import { sendEmail } from "../config/BrevoMail";
+import { ADMIN_EMAIL } from "../config/env";
 
 class BookingFormService {
   async createBookingForm(

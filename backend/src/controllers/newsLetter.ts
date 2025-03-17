@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { newsLetterService } from "@services";
-import { httpMessages } from "@src/utils/HttpMessage";
+import { newsLetterService } from "../services";
+import { httpMessages } from "../utils/HttpMessage";
 
 export class NewsLetterController {
   static async createNewsLetter(

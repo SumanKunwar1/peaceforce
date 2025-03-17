@@ -1,6 +1,6 @@
-import { IStats, Stats } from "@models";
-import { httpMessages } from "@utils/HttpMessage";
-import { IStatsInput } from "@typeInterface";
+import { IStats, Stats } from "../models";
+import { httpMessages } from "../utils/HttpMessage";
+import { IStatsInput } from "../types";
 
 class StatsService {
   async createStat(statData: IStatsInput): Promise<IStats> {

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { jobPostService } from "@services";
+import { jobPostService } from "../services";
 
 export class JobPostController {
   static async createJobPost(req: Request, res: Response, next: NextFunction) {

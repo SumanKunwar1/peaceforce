@@ -1,7 +1,7 @@
-import { IGalleryCategoryInput, IGalleryEventUpdate } from "@src/types";
-import { GalleryCategory, IGalleryCategory, IGalleryEvent } from "@models";
-import { deleteFile } from "@utils/deleteFile";
-import { httpMessages } from "@utils/HttpMessage";
+import { IGalleryCategoryInput, IGalleryEventUpdate } from "../types";
+import { GalleryCategory, IGalleryCategory, IGalleryEvent } from "../models";
+import { deleteFile } from "../utils/deleteFile";
+import { httpMessages } from "../utils/HttpMessage";
 
 class GalleryCategoryService {
   async createGalleryCategory(name: string): Promise<IGalleryCategory> {

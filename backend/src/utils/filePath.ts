@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs";
-import { UPLOAD_FOLDER } from "@config/env";
+import { UPLOAD_FOLDER } from "../config/env";
 
 // Resolve the absolute upload path dynamically
 export const uploadPath = path.join(__dirname, "../../../", UPLOAD_FOLDER);

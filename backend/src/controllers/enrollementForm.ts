@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { enrollmentService } from "@services";
+import { enrollmentService } from "../services";
 
 export class EnrollmentController {
   static async createEnrollment(

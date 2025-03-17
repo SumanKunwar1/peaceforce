@@ -1,10 +1,10 @@
 import express from "express";
-import { SeoMetaController } from "@controllers";
+import { SeoMetaController } from "../controllers";
 import {
   isAuthenticated,
   validateSeoMeta,
   validateSeoMetaUpdate,
-} from "@middleware";
+} from "../middleware";
 
 const router = express.Router();
 
