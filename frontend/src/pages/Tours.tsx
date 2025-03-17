@@ -52,7 +52,7 @@ const Tours: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Pilgrimage Tours
+            Community Tours
           </motion.h1>
           <motion.p
             className="text-red-100 text-lg"
