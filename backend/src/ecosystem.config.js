@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "peaceforce",
-      script: "./src/server.ts",
+      script: "./server.ts",
       interpreter: "ts-node",
       interpreter_args: "-r tsconfig-paths/register", // This will ensure path aliases are respected
       watch: true,
