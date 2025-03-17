@@ -13,15 +13,15 @@
     "paths": {
       "@src/*": ["src/*"],
       "@config/*": ["src/config/*"],
-      "@middleware": ["src/middleware"],
-      "@models": ["src/models"],
+      "@middleware/*": ["src/middleware/*"],
+      "@models/*": ["src/models/*"],
       "@utils/*": ["src/utils/*"],
-      "@app": ["src/app.ts"],
+      "@app/*": ["src/*"], // Update this to point to the src folder
       "@server": ["src/server.ts"],
-      "@typeInterface": ["src/types"],
-      "@controllers": ["src/controllers"],
-      "@services": ["src/services"],
-      "@routes": ["src/routes"]
+      "@typeInterface": ["src/types/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@services/*": ["src/services/*"],
+      "@routes/*": ["src/routes/*"]
     },
     "rootDir": "./src"
   },

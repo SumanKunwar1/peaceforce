@@ -1,11 +1,12 @@
 module.exports = {
   apps: [
     {
-      name: "peaceforce", // Application name
-      script: "./server.ts", // Entry file (make sure it's correct)
-      interpreter: "ts-node", // Use ts-node as the interpreter
-      watch: true, // Optional: watch for file changes
-      autorestart: true, // Automatically restart the app if it crashes
+      name: "peaceforce",
+      script: "./src/server.ts",
+      interpreter: "ts-node",
+      interpreter_args: "-r tsconfig-paths/register", // This loads tsconfig-paths
+      watch: true,
+      autorestart: true,
       env: {
         NODE_ENV: "production",
       },
