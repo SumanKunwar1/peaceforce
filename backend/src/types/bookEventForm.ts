@@ -1,4 +1,4 @@
-import { IUserInput } from "@typeInterface";
+import { IUserInput } from "../types";
 import { Types } from "mongoose";
 
 export interface IBookEventFormInput
