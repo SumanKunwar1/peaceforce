@@ -51,12 +51,12 @@ const SupportWays: React.FC<SupportWaysProps> = ({ waysToSupport }) => {
                 viewport={{ once: false }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Icon className="w-12 h-12 text-red-600 mb-4" />
+                <Icon className="w-12 h-12 text-green-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{way.title}</h3>
                 <p className="text-gray-600">{way.description}</p>
                 <button
                   onClick={() => handleLearnMore(way)}
-                  className="mt-4 text-red-600 font-semibold hover:text-red-700 transition-colors"
+                  className="mt-4 text-green-600 font-semibold hover:text-green-700 transition-colors"
                 >
                   Learn More →
                 </button>

@@ -287,7 +287,7 @@ const SupportModal: React.FC<SupportModalProps> = ({
             )}
             <Button
               type="submit"
-              className="w-full bg-red-600 text-white hover:bg-red-700"
+              className="w-full bg-green-600 text-white hover:bg-green-700"
             >
               {supportWay.title === "Volunteer"
                 ? "Submit Application"

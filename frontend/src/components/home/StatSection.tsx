@@ -65,7 +65,7 @@ const StatsSection = () => {
   const [renderKey, setRenderKey] = useState(0);
 
   return (
-    <section className="bg-red-600 py-16 text-white">
+    <section className="bg-green-600 py-16 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => {
@@ -89,7 +89,7 @@ const StatsSection = () => {
                   />
                 </div>
                 <div className="text-xl font-semibold mb-1">{stat.label}</div>
-                <div className="text-red-100">{stat.description}</div>
+                <div className="text-green-100">{stat.description}</div>
               </motion.div>
             );
           })}

@@ -28,13 +28,13 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ program }) => {
         <h3 className="text-xl font-semibold mb-2">{program?.title}</h3>
         <p className="text-gray-600 mb-4">{program?.shortDescription}</p>
         <div className="flex justify-between items-center">
-          <div className="flex items-center text-red-600">
+          <div className="flex items-center text-green-600">
             <Calendar className="w-4 h-4 mr-2" />
             <span>{new Date(program?.startDate).toLocaleDateString()}</span>
           </div>
           <Link
             to={`/programs/${program?.id}`}
-            className="text-red-600 hover:text-red-700 font-medium"
+            className="text-green-600 hover:text-green-700 font-medium"
           >
             Learn More →
           </Link>

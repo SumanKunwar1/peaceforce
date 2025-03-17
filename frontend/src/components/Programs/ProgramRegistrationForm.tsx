@@ -85,7 +85,7 @@ const ProgramRegistrationForm: React.FC<ProgramRegistrationFormProps> = ({
               className="mt-1"
             />
             {formik.touched.name && formik.errors.name && (
-              <div className="text-sm text-red-600">{formik.errors.name}</div>
+              <div className="text-sm text-green-600">{formik.errors.name}</div>
             )}
           </div>
 
@@ -103,7 +103,9 @@ const ProgramRegistrationForm: React.FC<ProgramRegistrationFormProps> = ({
               className="mt-1"
             />
             {formik.touched.email && formik.errors.email && (
-              <div className="text-sm text-red-600">{formik.errors.email}</div>
+              <div className="text-sm text-green-600">
+                {formik.errors.email}
+              </div>
             )}
           </div>
 
@@ -121,7 +123,7 @@ const ProgramRegistrationForm: React.FC<ProgramRegistrationFormProps> = ({
               className="mt-1"
             />
             {formik.touched.phoneNumber && formik.errors.phoneNumber && (
-              <div className="text-sm text-red-600">
+              <div className="text-sm text-green-600">
                 {formik.errors.phoneNumber}
               </div>
             )}
@@ -142,7 +144,7 @@ const ProgramRegistrationForm: React.FC<ProgramRegistrationFormProps> = ({
               className="mt-1"
             />
             {formik.touched.participants && formik.errors.participants && (
-              <div className="text-sm text-red-600">
+              <div className="text-sm text-green-600">
                 {formik.errors.participants}
               </div>
             )}
@@ -165,7 +167,7 @@ const ProgramRegistrationForm: React.FC<ProgramRegistrationFormProps> = ({
             />
             {formik.touched.specialRequirements &&
               formik.errors.specialRequirements && (
-                <div className="text-sm text-red-600">
+                <div className="text-sm text-green-600">
                   {formik.errors.specialRequirements}
                 </div>
               )}
@@ -175,7 +177,7 @@ const ProgramRegistrationForm: React.FC<ProgramRegistrationFormProps> = ({
             <Button
               type="submit"
               disabled={formik.isSubmitting}
-              className="bg-red-600 text-white hover:bg-red-700 w-full"
+              className="bg-green-600 text-white hover:bg-green-700 w-full"
             >
               {formik.isSubmitting
                 ? `${(<Spinner />)} Submitting...`

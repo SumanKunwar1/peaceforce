@@ -28,7 +28,7 @@ const LocationSection = () => {
               viewport={{ once: false }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <MapPin className="w-6 h-6 text-red-600 mt-1" />
+              <MapPin className="w-6 h-6 text-green-600 mt-1" />
               <div>
                 <h3 className="text-xl font-semibold mb-2">
                   Triyan Bodhi Meditation Center
@@ -52,7 +52,7 @@ const LocationSection = () => {
               href="https://maps.google.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-red-600 hover:text-red-700 font-semibold group"
+              className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold group"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: false }}

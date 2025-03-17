@@ -120,7 +120,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({
               required
             />
             {formik.touched.name && formik.errors.name && (
-              <p className="text-red-600 text-sm">{formik.errors.name}</p>
+              <p className="text-green-600 text-sm">{formik.errors.name}</p>
             )}
           </div>
 
@@ -141,7 +141,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({
               required
             />
             {formik.touched.email && formik.errors.email && (
-              <p className="text-red-600 text-sm">{formik.errors.email}</p>
+              <p className="text-green-600 text-sm">{formik.errors.email}</p>
             )}
           </div>
 
@@ -162,7 +162,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({
               required
             />
             {formik.touched.phoneNumber && formik.errors.phoneNumber && (
-              <p className="text-red-600 text-sm">
+              <p className="text-green-600 text-sm">
                 {formik.errors.phoneNumber}
               </p>
             )}
@@ -184,7 +184,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({
               required
             />
             {formik.touched.address && formik.errors.address && (
-              <p className="text-red-600 text-sm">{formik.errors.address}</p>
+              <p className="text-green-600 text-sm">{formik.errors.address}</p>
             )}
           </div>
 
@@ -213,7 +213,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({
             </Select>
             {formik.touched.preferredLanguage &&
               formik.errors.preferredLanguage && (
-                <p className="text-red-600 text-sm">
+                <p className="text-green-600 text-sm">
                   {formik.errors.preferredLanguage}
                 </p>
               )}
@@ -237,7 +237,7 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({
 
           <Button
             type="submit"
-            className="w-full bg-red-600 text-white hover:bg-red-700"
+            className="w-full bg-green-600 text-white hover:bg-green-700"
             disabled={formik.isSubmitting}
           >
             {formik.isSubmitting ? (

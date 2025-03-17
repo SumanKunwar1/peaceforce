@@ -132,7 +132,7 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
                 className="mt-1"
               />
               {formik.touched.name && formik.errors.name && (
-                <div className="text-red-500 text-sm mt-1">
+                <div className="text-green-500 text-sm mt-1">
                   {formik.errors.name}
                 </div>
               )}
@@ -153,7 +153,7 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
                 className="mt-1"
               />
               {formik.touched.email && formik.errors.email && (
-                <div className="text-red-500 text-sm mt-1">
+                <div className="text-green-500 text-sm mt-1">
                   {formik.errors.email}
                 </div>
               )}
@@ -174,7 +174,7 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
                 className="mt-1"
               />
               {formik.touched.phoneNumber && formik.errors.phoneNumber && (
-                <div className="text-red-500 text-sm mt-1">
+                <div className="text-green-500 text-sm mt-1">
                   {formik.errors.phoneNumber}
                 </div>
               )}
@@ -190,8 +190,8 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
                     key={ticket.type}
                     className={`p-3 rounded-lg border-2 cursor-pointer transition-all text-sm ${
                       formik.values.ticketType === ticket.type
-                        ? "border-red-600 bg-red-50"
-                        : "border-gray-200 hover:border-red-300"
+                        ? "border-green-600 bg-green-50"
+                        : "border-gray-200 hover:border-green-300"
                     }`}
                     onClick={() => {
                       formik.setFieldValue("ticketType", ticket.type);
@@ -199,12 +199,12 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
                     }}
                   >
                     <div className="font-semibold">{ticket.type}</div>
-                    <div className="text-red-600">Rs. {ticket.price}</div>
+                    <div className="text-green-600">Rs. {ticket.price}</div>
                   </div>
                 ))}
               </div>
               {formik.touched.ticketType && formik.errors.ticketType && (
-                <div className="text-red-500 text-sm mt-1">
+                <div className="text-green-500 text-sm mt-1">
                   {formik.errors.ticketType}
                 </div>
               )}
@@ -240,7 +240,7 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
                 className="mt-1"
               />
               {formik.touched.quantity && formik.errors.quantity && (
-                <div className="text-red-500 text-sm mt-1">
+                <div className="text-green-500 text-sm mt-1">
                   {formik.errors.quantity}
                 </div>
               )}
@@ -261,7 +261,7 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
               />
               {formik.touched.specialRequirements &&
                 formik.errors.specialRequirements && (
-                  <div className="text-red-500 text-sm mt-1">
+                  <div className="text-green-500 text-sm mt-1">
                     {formik.errors.specialRequirements}
                   </div>
                 )}
@@ -269,7 +269,7 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
 
             <Button
               type="submit"
-              className="w-full bg-red-600 text-white hover:bg-red-700"
+              className="w-full bg-green-600 text-white hover:bg-green-700"
             >
               Book Now
             </Button>
@@ -312,7 +312,7 @@ const EventRegistrationForm: React.FC<EventRegistrationFormProps> = ({
             </AlertDialogCancel>
             <AlertDialogAction
               onClick={handleConfirm}
-              className="bg-red-600 text-white hover:bg-red-700"
+              className="bg-green-600 text-white hover:bg-green-700"
             >
               Confirm Booking
             </AlertDialogAction>

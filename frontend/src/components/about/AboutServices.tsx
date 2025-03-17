@@ -29,7 +29,7 @@ const AboutServices: React.FC<AboutServicesProps> = ({ servicesSection }) => {
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
               >
-                <IconComponent className="w-12 h-12 text-red-600 mb-4" />
+                <IconComponent className="w-12 h-12 text-green-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
                 <p className="text-gray-700">{service.description}</p>
               </div>

@@ -91,8 +91,8 @@ const Navbar = () => {
                   to={itemPath}
                   className={`mr-2 ${
                     isActive
-                      ? "text-blue-600"
-                      : "text-gray-700 hover:text-blue-600"
+                      ? "text-green-600"
+                      : "text-gray-700 hover:text-green-600"
                   }`}
                   onClick={(e) => e.stopPropagation()}
                 >
@@ -132,8 +132,8 @@ const Navbar = () => {
                 to={itemPath}
                 className={`px-4 py-2 rounded-md font-bold text-base transition-all duration-200 ${
                   isActive
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                    ? "text-green-600 bg-green-50"
+                    : "text-gray-700 hover:text-green-600 hover:bg-green-50"
                 }`}
               >
                 {itemLabel}
@@ -182,8 +182,8 @@ const Navbar = () => {
                 to={itemPath}
                 className={`${
                   isActive
-                    ? "bg-blue-50 text-blue-600"
-                    : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                    ? "bg-green-50 text-green-600"
+                    : "text-gray-700 hover:bg-green-50 hover:text-green-600"
                 } px-3 py-2 rounded-md text-base font-bold flex-grow`}
                 onClick={() => setIsOpen(false)}
               >
@@ -212,8 +212,8 @@ const Navbar = () => {
                     to={`/${childPage.slug}`}
                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                       location.pathname === `/${childPage.slug}`
-                        ? "bg-blue-50 text-blue-600"
-                        : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                        ? "bg-green-50 text-green-600"
+                        : "text-gray-700 hover:bg-green-50 hover:text-green-600"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -232,8 +232,8 @@ const Navbar = () => {
             to={itemPath}
             className={`${
               isActive
-                ? "bg-blue-50 text-blue-600"
-                : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                ? "bg-green-50 text-green-600"
+                : "text-gray-700 hover:bg-green-50 hover:text-green-600"
             } block px-3 py-2 rounded-md text-base font-bold`}
             onClick={() => setIsOpen(false)}
           >
@@ -245,7 +245,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-white via-blue-50 to-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-white via-green-50 to-white shadow-lg sticky top-0 z-50">
       <div className="mx-auto sm:mx-8 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between py-4 md:py-4">
           <div className="flex-shrink-0 flex items-center">
@@ -268,7 +268,7 @@ const Navbar = () => {
             </NavigationMenu>
             <Link
               to="/support"
-              className="ml-4 px-6 py-2 bg-blue-600 text-white rounded-md font-bold hover:bg-blue-700 transition-colors"
+              className="ml-4 px-6 py-2 bg-green-600 text-white rounded-md font-bold hover:bg-green-700 transition-colors"
             >
               Support Us
             </Link>
@@ -278,7 +278,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-green-50 focus:outline-none"
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -297,7 +297,7 @@ const Navbar = () => {
             {renderMobileNavItems()}
             <Link
               to="/support"
-              className="block px-3 py-2 bg-blue-600 text-white rounded-md font-bold hover:bg-blue-700 transition-colors"
+              className="block px-3 py-2 bg-green-600 text-white rounded-md font-bold hover:bg-green-700 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Support Us

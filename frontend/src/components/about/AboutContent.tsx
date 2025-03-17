@@ -16,7 +16,7 @@ const AboutContent: React.FC<AboutContentProps> = ({ aboutContent, image }) => {
               const IconComponent = content.icon ? BookOpen : BookOpen; // Replace with dynamic icon if needed
               return (
                 <div key={index} className="space-y-4">
-                  <IconComponent className="w-12 h-12 text-red-600" />
+                  <IconComponent className="w-12 h-12 text-green-600" />
                   <h2 className="text-3xl font-bold">{content.title}</h2>
                   <p className="text-lg text-gray-700">{content.description}</p>
                 </div>
@@ -32,7 +32,7 @@ const AboutContent: React.FC<AboutContentProps> = ({ aboutContent, image }) => {
               alt="Buddhist Temple"
               className="rounded-lg shadow-xl"
             />
-            <div className="absolute -bottom-6 -right-6 bg-red-600 text-white p-6 rounded-lg shadow-lg">
+            <div className="absolute -bottom-6 -right-6 bg-green-600 text-white p-6 rounded-lg shadow-lg">
               <Heart className="w-8 h-8 mb-2" />
               <p className="text-lg font-semibold">Established in 2003</p>
             </div>

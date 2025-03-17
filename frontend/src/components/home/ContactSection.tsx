@@ -87,7 +87,7 @@ const LocationSection: React.FC = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your Name"
-                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
                   required
                 />
               </div>
@@ -98,7 +98,7 @@ const LocationSection: React.FC = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="Your Email"
-                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
                   required
                 />
               </div>
@@ -109,7 +109,7 @@ const LocationSection: React.FC = () => {
                   value={formData.phoneNumber}
                   onChange={handleInputChange}
                   placeholder="Your Contact Number"
-                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
                   required
                 />
               </div>
@@ -119,7 +119,7 @@ const LocationSection: React.FC = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   placeholder="Your Message"
-                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
                   rows={4}
                   required
                 />
@@ -127,7 +127,7 @@ const LocationSection: React.FC = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="bg-red-600 w-full text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors"
+                  className="bg-green-600 w-full text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors"
                 >
                   Submit
                 </button>

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type React from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -5,6 +6,7 @@ import type { IBookMembershipInput } from "@/types/bookMembership";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface PersonalInformationFormProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setFieldValue: (field: string, value: any) => void;
   values: IBookMembershipInput;
   errors: any;
@@ -40,10 +42,10 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
             name="name"
             value={values.name}
             onChange={(e) => setFieldValue("name", e.target.value)}
-            className={errors.name && touched.name ? "border-red-500" : ""}
+            className={errors.name && touched.name ? "border-green-500" : ""}
           />
           {errors.name && touched.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+            <p className="text-green-500 text-sm mt-1">{errors.name}</p>
           )}
         </div>
         <div>
@@ -54,10 +56,10 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
             type="email"
             value={values.email}
             onChange={(e) => setFieldValue("email", e.target.value)}
-            className={errors.email && touched.email ? "border-red-500" : ""}
+            className={errors.email && touched.email ? "border-green-500" : ""}
           />
           {errors.email && touched.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+            <p className="text-green-500 text-sm mt-1">{errors.email}</p>
           )}
         </div>
         <div>
@@ -68,11 +70,13 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
             value={values.phoneNumber}
             onChange={(e) => setFieldValue("phoneNumber", e.target.value)}
             className={
-              errors.phoneNumber && touched.phoneNumber ? "border-red-500" : ""
+              errors.phoneNumber && touched.phoneNumber
+                ? "border-green-500"
+                : ""
             }
           />
           {errors.phoneNumber && touched.phoneNumber && (
-            <p className="text-red-500 text-sm mt-1">{errors.phoneNumber}</p>
+            <p className="text-green-500 text-sm mt-1">{errors.phoneNumber}</p>
           )}
         </div>
       </div>
@@ -87,12 +91,12 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
           }
           className={
             errors.mailingAddress?.street && touched.mailingAddress?.street
-              ? "border-red-500"
+              ? "border-green-500"
               : ""
           }
         />
         {errors.mailingAddress?.street && touched.mailingAddress?.street && (
-          <p className="text-red-500 text-sm mt-1">
+          <p className="text-green-500 text-sm mt-1">
             {errors.mailingAddress.street}
           </p>
         )}
@@ -109,12 +113,12 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
             }
             className={
               errors.mailingAddress?.city && touched.mailingAddress?.city
-                ? "border-red-500"
+                ? "border-green-500"
                 : ""
             }
           />
           {errors.mailingAddress?.city && touched.mailingAddress?.city && (
-            <p className="text-red-500 text-sm mt-1">
+            <p className="text-green-500 text-sm mt-1">
               {errors.mailingAddress.city}
             </p>
           )}
@@ -130,12 +134,12 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
             }
             className={
               errors.mailingAddress?.state && touched.mailingAddress?.state
-                ? "border-red-500"
+                ? "border-green-500"
                 : ""
             }
           />
           {errors.mailingAddress?.state && touched.mailingAddress?.state && (
-            <p className="text-red-500 text-sm mt-1">
+            <p className="text-green-500 text-sm mt-1">
               {errors.mailingAddress.state}
             </p>
           )}
@@ -152,13 +156,13 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
             className={
               errors.mailingAddress?.postalCode &&
               touched.mailingAddress?.postalCode
-                ? "border-red-500"
+                ? "border-green-500"
                 : ""
             }
           />
           {errors.mailingAddress?.postalCode &&
             touched.mailingAddress?.postalCode && (
-              <p className="text-red-500 text-sm mt-1">
+              <p className="text-green-500 text-sm mt-1">
                 {errors.mailingAddress.postalCode}
               </p>
             )}
@@ -174,13 +178,13 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
             }
             className={
               errors.mailingAddress?.country && touched.mailingAddress?.country
-                ? "border-red-500"
+                ? "border-green-500"
                 : ""
             }
           />
           {errors.mailingAddress?.country &&
             touched.mailingAddress?.country && (
-              <p className="text-red-500 text-sm mt-1">
+              <p className="text-green-500 text-sm mt-1">
                 {errors.mailingAddress.country}
               </p>
             )}
@@ -194,10 +198,12 @@ const PersonalInformationForm: React.FC<PersonalInformationFormProps> = ({
           type="file"
           accept="image/*"
           onChange={handleImageChange}
-          className={errors.image && touched.image ? "border-red-500" : ""}
+          className={errors.image && touched.image ? "border-green-500" : ""}
         />
         {errors.image && touched.image && (
-          <p className="text-red-500 text-sm mt-1">{errors.image as string}</p>
+          <p className="text-green-500 text-sm mt-1">
+            {errors.image as string}
+          </p>
         )}
         {values.image && (
           <Card className="mt-4">

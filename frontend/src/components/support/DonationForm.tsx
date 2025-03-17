@@ -27,7 +27,7 @@ const DonationForm: React.FC<DonationFormProps> = ({ supportType }) => {
         <input
           type="text"
           required
-          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
@@ -39,7 +39,7 @@ const DonationForm: React.FC<DonationFormProps> = ({ supportType }) => {
         <input
           type="email"
           required
-          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+          className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
@@ -52,7 +52,7 @@ const DonationForm: React.FC<DonationFormProps> = ({ supportType }) => {
           <input
             type="number"
             required
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
             value={formData.amount}
             onChange={(e) =>
               setFormData({ ...formData, amount: e.target.value })
@@ -62,7 +62,7 @@ const DonationForm: React.FC<DonationFormProps> = ({ supportType }) => {
       )}
       <button
         type="submit"
-        className="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors"
+        className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors"
       >
         {supportType === "Volunteer"
           ? "Submit Application"

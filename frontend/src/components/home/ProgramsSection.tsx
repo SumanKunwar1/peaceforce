@@ -35,7 +35,7 @@ const EventsSection: React.FC = () => {
 
   if (isError) {
     return (
-      <div className="text-center text-red-500">
+      <div className="text-center text-green-500">
         Error loading programs. Please try again later.
       </div>
     );
@@ -67,7 +67,7 @@ const EventsSection: React.FC = () => {
         >
           <Link
             to="/programs"
-            className="inline-flex items-center text-red-600 hover:text-red-700 font-semibold"
+            className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold"
           >
             View All Programs
             <svg

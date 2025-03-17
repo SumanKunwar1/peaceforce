@@ -82,12 +82,12 @@ const ServicesSection = () => {
                 className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
                 variants={itemVariants}
               >
-                <IconComponent className="w-12 h-12 text-red-600 mb-4" />
+                <IconComponent className="w-12 h-12 text-green-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <Link
                   to={service.link}
-                  className="text-red-600 hover:text-red-700 font-medium inline-flex items-center group"
+                  className="text-green-600 hover:text-green-700 font-medium inline-flex items-center group"
                 >
                   Learn More
                   <motion.svg
