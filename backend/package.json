@@ -1,0 +1,59 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "dev": "nodemon -r ts-node/register src/server.ts",
+    "build": "tsc",
+    "clean": "rimraf build",
+    "test": "jest --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "backendapi-backend",
+  "_moduleAliases": {
+    "@src": "build",
+    "@config": "build/config",
+    "@middleware": "build/middleware",
+    "@models": "build/models",
+    "@utils": "build/utils",
+    "@app": "build/app.js",
+    "@server": "build/server.js",
+    "@controllers": "build/controllers",
+    "@services": "build/services",
+    "@routes": "build/routes"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mime-types": "^2.1.35",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.9.5",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.5",
+    "sib-api-v3-typescript": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/mime-types": "^2.1.4",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.7",
+    "@types/request": "^2.48.12",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

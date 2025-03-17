@@ -1,0 +1,66 @@
+import express from "express";
+import userRouter from "./users";
+import adminLoginRouter from "./adminLogin";
+import blogPostRouter from "./blogPost";
+import jobPostRouter from "./jobPost";
+import fileRouter from "./file";
+import courseRouter from "./course";
+import enrollmentRouter from "./enrollementForm";
+import tourRourter from "./tour";
+import bookingRouter from "./bookingForm";
+import eventRouter from "./event";
+import bookEventRouter from "./bookEventForm";
+import programRouter from "./program";
+import bookProgramRouter from "./bookProgramForm";
+import sliderRouter from "./slider";
+import aboutRouter from "./about";
+import faqRouter from "./faq";
+import supportRouter from "./support";
+import donationRouter from "./donation";
+import teamRouter from "./team";
+import galleryRouter from "./gallery";
+import contactRouter from "./contact";
+import newsLetterRouter from "./newsLetter";
+import infoSectionRouter from "./infoSection";
+import memberShipRouter from "./memberShip";
+import bookMemberShipRouter from "./bookMemberShip";
+import statsRouter from "./stats";
+import testimonialRouter from "./testimonials";
+import seoMetaRouter from "./seoMeta";
+import pageRouter from "./page";
+
+const router = express.Router();
+
+router.use("/user", userRouter);
+router.use("/login", adminLoginRouter);
+router.use("/blogpost", blogPostRouter);
+router.use("/jobpost", jobPostRouter);
+router.use("/image", fileRouter);
+router.use("/course", courseRouter);
+router.use("/enrollment", enrollmentRouter);
+router.use("/tour", tourRourter);
+router.use("/book-tour", bookingRouter);
+router.use("/event", eventRouter);
+router.use("/book-event", bookEventRouter);
+router.use("/program", programRouter);
+router.use("/book-program", bookProgramRouter);
+router.use("/slider", sliderRouter);
+router.use("/about", aboutRouter);
+router.use("/faq", faqRouter);
+router.use("/support", supportRouter);
+router.use("/donation", donationRouter);
+router.use("/team", teamRouter);
+router.use("/gallery", galleryRouter);
+router.use("/contact", contactRouter);
+router.use("/news-letter", newsLetterRouter);
+router.use("/info-section", infoSectionRouter);
+router.use("/membership", memberShipRouter);
+router.use("/book-membership", bookMemberShipRouter);
+router.use("/stats", statsRouter);
+router.use("/testimonial", testimonialRouter);
+router.use("/global-meta", seoMetaRouter);
+router.use("/page", pageRouter);
+
+//if image varibale which are expected to be array has length 1 then we do not have correct logic for that!
+
+export default router;
