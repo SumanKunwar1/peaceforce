@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const _controllers_1 = require("@controllers");
+const _middleware_1 = require("@middleware");
+const router = (0, express_1.Router)();
+router.post("/", _middleware_1.isAuthenticated, _middleware_1.validateFAQ, _controllers_1.FAQController.createFAQ);
+router.patch("/:faqId", _middleware_1.isAuthenticated, _middleware_1.validateFAQUpdate, _controllers_1.FAQController.updateFAQ);
+router.get("/", _controllers_1.FAQController.getFAQs);
+router.get("/:faqId", _controllers_1.FAQController.getFAQById);
+router.delete("/:faqId", _middleware_1.isAuthenticated, _controllers_1.FAQController.deleteFAQ);
+exports.default = router;
