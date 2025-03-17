@@ -55,7 +55,8 @@ const Programs: React.FC = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
-                Join our programs and deepen your spiritual practice
+                Join our programs and strengthen your commitment to creating
+                positive change in the community
               </motion.p>
             </div>
           </div>

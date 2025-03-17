@@ -52,7 +52,7 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-white mb-4">Blog</h1>
           <p className="text-green-100">
-            Insights and teachings from our community
+            Thoughts, stories, and lessons shared by our community
           </p>
         </div>
       </motion.div>

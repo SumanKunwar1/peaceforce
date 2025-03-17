@@ -61,7 +61,8 @@ const Tours: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Explore sacred Buddhist sites and experience spiritual journeys
+            Refines the connection between youth empowerment hubs and creating
+            safer communities
           </motion.p>
         </div>
       </motion.div>

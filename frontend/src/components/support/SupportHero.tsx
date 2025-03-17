@@ -23,7 +23,7 @@ const SupportHero: React.FC<SupportHeroProps> = ({ heroData }) => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              {heroData.title || "Support Our Cause"}
+              {heroData.title || "Support Us"}
             </motion.h1>
             <motion.p
               className="text-green-100 text-lg"
@@ -32,7 +32,7 @@ const SupportHero: React.FC<SupportHeroProps> = ({ heroData }) => {
               transition={{ delay: 0.3 }}
             >
               {heroData.subtitle ||
-                "Help us spread Buddhist teachings and support our community"}
+                "Support our efforts to combat youth violence and empower young people for a brighter future"}
             </motion.p>
           </div>
         </div>

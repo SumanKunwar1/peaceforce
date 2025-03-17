@@ -101,7 +101,7 @@ const Gallery: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-white mb-4">Gallery</h1>
-          <p className="text-green-100">Moments captured at BTMC Foundation</p>
+          <p className="text-green-100">Moments captured at PeaceForce</p>
         </div>
       </motion.div>
 

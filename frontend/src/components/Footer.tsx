@@ -65,9 +65,9 @@ const Footer: React.FC = () => {
   const footerPages = pages.filter((page) => page.location === "footer");
   const quickNavigationLinks = [
     { title: "About Us", slug: "about" },
-    { title: "Prevention Programs", slug: "teachings" },
+    //{ title: "Prevention Programs", slug: "teachings" },
     { title: "Community Action", slug: "tours" },
-    { title: "Events", slug: "events" },
+    //{ title: "Events", slug: "events" },
     { title: "Programs", slug: "programs" },
     { title: "Support Us", slug: "support" },
   ];
