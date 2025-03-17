@@ -41,11 +41,6 @@ const Navbar = () => {
   // Filter pages that should appear in the header
   const headerPages = pages.filter((page) => page.location === "header");
 
-  // Remove this:
-  // const staticNavItems = [ ... ];
-
-  // Use NavItems directly
-
   // Get parent pages - these are both static nav items and dynamic pages with parentPage="none"
   const getParentPages = () => {
     // Get dynamic parent pages (those with parentPage="none")
@@ -96,8 +91,8 @@ const Navbar = () => {
                   to={itemPath}
                   className={`mr-2 ${
                     isActive
-                      ? "text-red-600"
-                      : "text-gray-700 hover:text-red-600"
+                      ? "text-blue-600"
+                      : "text-gray-700 hover:text-blue-600"
                   }`}
                   onClick={(e) => e.stopPropagation()}
                 >
@@ -137,8 +132,8 @@ const Navbar = () => {
                 to={itemPath}
                 className={`px-4 py-2 rounded-md font-bold text-base transition-all duration-200 ${
                   isActive
-                    ? "text-red-600 bg-red-50"
-                    : "text-gray-700 hover:text-red-600 hover:bg-red-50"
+                    ? "text-blue-600 bg-blue-50"
+                    : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
                 }`}
               >
                 {itemLabel}
@@ -187,8 +182,8 @@ const Navbar = () => {
                 to={itemPath}
                 className={`${
                   isActive
-                    ? "bg-red-50 text-red-600"
-                    : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+                    ? "bg-blue-50 text-blue-600"
+                    : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                 } px-3 py-2 rounded-md text-base font-bold flex-grow`}
                 onClick={() => setIsOpen(false)}
               >
@@ -217,8 +212,8 @@ const Navbar = () => {
                     to={`/${childPage.slug}`}
                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                       location.pathname === `/${childPage.slug}`
-                        ? "bg-red-50 text-red-600"
-                        : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+                        ? "bg-blue-50 text-blue-600"
+                        : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -237,8 +232,8 @@ const Navbar = () => {
             to={itemPath}
             className={`${
               isActive
-                ? "bg-red-50 text-red-600"
-                : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+                ? "bg-blue-50 text-blue-600"
+                : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
             } block px-3 py-2 rounded-md text-base font-bold`}
             onClick={() => setIsOpen(false)}
           >
@@ -250,7 +245,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-white via-red-50 to-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-white via-blue-50 to-white shadow-lg sticky top-0 z-50">
       <div className="mx-auto sm:mx-8 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between py-4 md:py-4">
           <div className="flex-shrink-0 flex items-center">
@@ -258,7 +253,11 @@ const Navbar = () => {
               to="/"
               className="flex items-center space-x-3 hover:opacity-90 transition-opacity"
             >
-              <img src="/logo.png" alt="BTMC Logo" className="w-auto h-14" />
+              <img
+                src="/logo.png"
+                alt="PeaceForce Logo"
+                className="w-auto h-14"
+              />
             </Link>
           </div>
 
@@ -269,7 +268,7 @@ const Navbar = () => {
             </NavigationMenu>
             <Link
               to="/support"
-              className="ml-4 px-6 py-2 bg-red-600 text-white rounded-md font-bold hover:bg-red-700 transition-colors"
+              className="ml-4 px-6 py-2 bg-blue-600 text-white rounded-md font-bold hover:bg-blue-700 transition-colors"
             >
               Support Us
             </Link>
@@ -279,7 +278,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-red-50 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50 focus:outline-none"
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -298,7 +297,7 @@ const Navbar = () => {
             {renderMobileNavItems()}
             <Link
               to="/support"
-              className="block px-3 py-2 bg-red-600 text-white rounded-md font-bold hover:bg-red-700 transition-colors"
+              className="block px-3 py-2 bg-blue-600 text-white rounded-md font-bold hover:bg-blue-700 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Support Us

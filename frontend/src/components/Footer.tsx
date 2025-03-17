@@ -64,10 +64,10 @@ const Footer: React.FC = () => {
   const footerPages = pages.filter((page) => page.location === "footer");
   const quickNavigationLinks = [
     { title: "About Us", slug: "about" },
-    { title: "Teachings", slug: "teachings" },
-    { title: "Tours", slug: "tours" },
+    { title: "Prevention Programs", slug: "teachings" },
+    { title: "Community Action", slug: "tours" },
     { title: "Events", slug: "events" },
-    { title: "Retreat Events", slug: "programs" },
+    { title: "Programs", slug: "programs" },
     { title: "Support Us", slug: "support" },
   ];
   const quickLinks = [
@@ -224,8 +224,7 @@ const Footer: React.FC = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p>
-            &copy; {new Date().getFullYear()} BTMC Foundation. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} PeaceForce. All rights reserved.
           </p>
         </div>
       </div>
