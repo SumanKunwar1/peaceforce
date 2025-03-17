@@ -52,7 +52,7 @@ const GalleryDetail: React.FC = () => {
   if (error || !eventDetails) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-red-500">{error || "Event not found"}</p>
+        <p className="text-green-500">{error || "Event not found"}</p>
       </div>
     );
   }
@@ -60,7 +60,7 @@ const GalleryDetail: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-red-600 mb-4">
+        <h1 className="text-4xl font-bold text-green-600 mb-4">
           {eventDetails.title}
         </h1>
         <p className="text-gray-700 mb-4">{eventDetails.description}</p>

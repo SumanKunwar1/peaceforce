@@ -35,7 +35,7 @@ const ProgramDetail: React.FC = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Program Not Found</h2>
-          <Link to="/programs" className="text-red-600 hover:text-red-700">
+          <Link to="/programs" className="text-green-100 hover:text-green-200">
             Back to Programs
           </Link>
         </div>
@@ -152,7 +152,7 @@ const ProgramDetail: React.FC = () => {
                       key={index}
                       className="flex items-start space-x-2 text-gray-700"
                     >
-                      <span className="w-2 h-2 rounded-full bg-red-600 mt-2" />
+                      <span className="w-2 h-2 rounded-full bg-green-100 mt-2" />
                       <span>{goal}</span>
                     </div>
                   ))}
@@ -221,7 +221,7 @@ const ProgramDetail: React.FC = () => {
                 </div>
                 <button
                   onClick={() => setIsRegistrationOpen(true)}
-                  className="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors"
+                  className="w-full bg-green-100 text-white py-3 rounded-lg hover:bg-green-200 transition-colors"
                 >
                   Join Program
                 </button>

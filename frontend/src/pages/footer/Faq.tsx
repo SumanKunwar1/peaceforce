@@ -28,6 +28,7 @@ const FaqPage = () => {
         const faqs = await faqApi.getFAQs();
         setFaqData(faqs as FAQ[]);
         setLoading(false);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError("Failed to fetch FAQs");
         setLoading(false);
@@ -48,7 +49,7 @@ const FaqPage = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-red-600">
+      <div className="min-h-screen flex items-center justify-center text-green-600">
         {error}
       </div>
     );
@@ -66,7 +67,7 @@ const FaqPage = () => {
       ))}
       <div className="min-h-screen bg-gray-50 font-sans">
         {/* Navbar */}
-        <div className="bg-red-600 text-white p-4 text-center">
+        <div className="bg-green-600 text-white p-4 text-center">
           <h1 className="text-3xl font-bold">BTMC Foundation</h1>
         </div>
 
@@ -82,8 +83,8 @@ const FaqPage = () => {
                 className="border-t border-gray-300 rounded-lg overflow-hidden"
               >
                 <div
-                  className={`flex items-center justify-between px-6 py-4 cursor-pointer bg-red-600 text-white transition-all ${
-                    activeIndex === index ? "bg-red-800" : "bg-red-700"
+                  className={`flex items-center justify-between px-6 py-4 cursor-pointer bg-green-600 text-white transition-all ${
+                    activeIndex === index ? "bg-green-800" : "bg-green-700"
                   }`}
                   onClick={() => toggleAccordion(index)}
                 >
@@ -122,7 +123,7 @@ const FaqPage = () => {
         {/* Back to Top Button */}
         <button
           onClick={() => window.scrollTo(0, 0)}
-          className="fixed bottom-10 right-10 bg-red-600 text-white p-3 rounded-full shadow-lg"
+          className="fixed bottom-10 right-10 bg-green-600 text-white p-3 rounded-full shadow-lg"
         >
           ↑
         </button>

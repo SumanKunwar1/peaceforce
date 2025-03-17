@@ -32,7 +32,7 @@ const Programs: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <motion.div
-        className="bg-gradient-to-r from-red-600 to-red-800 py-12"
+        className="bg-gradient-to-r from-green-100 to-green-200 py-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -50,7 +50,7 @@ const Programs: React.FC = () => {
                 Our Programs
               </motion.h1>
               <motion.p
-                className="text-red-100 text-lg"
+                className="text-green-100 text-lg"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}

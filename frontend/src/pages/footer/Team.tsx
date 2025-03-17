@@ -68,13 +68,13 @@ const Team = () => {
       <div className="min-h-screen bg-gray-50">
         {/* Header Section */}
         <motion.div
-          className="bg-gradient-to-r from-red-600 to-red-800 py-12"
+          className="bg-gradient-to-r from-green-600 to-green-800 py-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
           <div className="max-w-7xl mx-auto px-4">
             <h1 className="text-4xl font-bold text-white mb-4">Our Team</h1>
-            <p className="text-red-100">Meet our dedicated team members</p>
+            <p className="text-green-100">Meet our dedicated team members</p>
           </div>
         </motion.div>
 
@@ -113,10 +113,10 @@ const Team = () => {
                   </div>
                   {/* Name & Role */}
                   <div className="p-4 text-center">
-                    <h2 className="text-xl font-bold text-red-500">
+                    <h2 className="text-xl font-bold text-green-500">
                       {member.name}
                     </h2>
-                    <p className="text-sm text-red-500">{member.role}</p>
+                    <p className="text-sm text-green-500">{member.role}</p>
                     {/* Added Bio with truncation */}
                     <p className="mt-2 text-sm text-gray-600 line-clamp-2">
                       {member.bio}
@@ -129,7 +129,7 @@ const Team = () => {
                         href={member.socialLinks.facebook}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-red-500 hover:text-red-700 transition-colors"
+                        className="text-green-500 hover:text-green-700 transition-colors"
                       >
                         <Facebook className="w-6 h-6" />
                       </a>
@@ -139,7 +139,7 @@ const Team = () => {
                         href={member.socialLinks.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-red-500 hover:text-red-700 transition-colors"
+                        className="text-green-500 hover:text-green-700 transition-colors"
                       >
                         <Linkedin className="w-6 h-6" />
                       </a>
@@ -149,7 +149,7 @@ const Team = () => {
                         href={member.socialLinks.instagram}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-red-500 hover:text-red-700 transition-colors"
+                        className="text-green-500 hover:text-green-700 transition-colors"
                       >
                         <Instagram className="w-6 h-6" />
                       </a>

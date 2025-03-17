@@ -42,6 +42,7 @@ const TourDetail: React.FC = () => {
           setRelatedTours(related);
         }
         setLoading(false);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError("Failed to fetch tour details. Please try again later.");
         setLoading(false);
@@ -74,7 +75,7 @@ const TourDetail: React.FC = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Tour Not Found</h2>
-          <Link to="/tours" className="text-red-600 hover:text-red-700">
+          <Link to="/tours" className="text-green-100 hover:text-green-200">
             Back to Tours
           </Link>
         </div>
@@ -155,7 +156,7 @@ const TourDetail: React.FC = () => {
                       key={index}
                       className="flex items-start space-x-2 text-gray-700"
                     >
-                      <CheckCircle className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-green-100 mt-1 flex-shrink-0" />
                       <span>{highlight}</span>
                     </div>
                   ))}
@@ -185,7 +186,7 @@ const TourDetail: React.FC = () => {
                         }
                       >
                         <div className="flex items-center space-x-4">
-                          <Calendar className="w-5 h-5 text-red-600" />
+                          <Calendar className="w-5 h-5 text-green-100" />
                           <h3 className="font-semibold">Day {item.day}</h3>
                         </div>
                         {expandedDays.includes(item.day) ? (
@@ -216,7 +217,7 @@ const TourDetail: React.FC = () => {
                   <ul className="space-y-2">
                     {tour.inclusions.map((inclusion, index) => (
                       <li key={index} className="flex items-center space-x-2">
-                        <CheckCircle className="w-4 h-4 text-red-600" />
+                        <CheckCircle className="w-4 h-4 text-green-100" />
                         <span className="text-gray-700">{inclusion}</span>
                       </li>
                     ))}
@@ -224,7 +225,7 @@ const TourDetail: React.FC = () => {
                 </div>
                 <Button
                   onClick={() => setBookingFormOpen(true)}
-                  className="w-full bg-red-600 text-white hover:bg-red-700"
+                  className="w-full bg-green-100 text-white hover:bg-green-200"
                 >
                   Book Tour
                 </Button>

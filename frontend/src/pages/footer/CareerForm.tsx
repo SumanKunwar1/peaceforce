@@ -94,6 +94,7 @@ const CareerForm: React.FC<CareerFormProps> = ({
                     "Application submitted with some concerns.",
                 });
               }
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
             } catch (error: any) {
               console.error("Error submitting application:", error);
 
@@ -120,7 +121,7 @@ const CareerForm: React.FC<CareerFormProps> = ({
                 <ErrorMessage
                   name="name"
                   component="div"
-                  className="text-red-500 text-sm mt-1"
+                  className="text-green-500 text-sm mt-1"
                 />
               </div>
 
@@ -130,7 +131,7 @@ const CareerForm: React.FC<CareerFormProps> = ({
                 <ErrorMessage
                   name="email"
                   component="div"
-                  className="text-red-500 text-sm mt-1"
+                  className="text-green-500 text-sm mt-1"
                 />
               </div>
 
@@ -140,7 +141,7 @@ const CareerForm: React.FC<CareerFormProps> = ({
                 <ErrorMessage
                   name="phoneNumber"
                   component="div"
-                  className="text-red-500 text-sm mt-1"
+                  className="text-green-500 text-sm mt-1"
                 />
               </div>
 
@@ -157,7 +158,7 @@ const CareerForm: React.FC<CareerFormProps> = ({
                 <ErrorMessage
                   name="cv"
                   component="div"
-                  className="text-red-500 text-sm mt-1"
+                  className="text-green-500 text-sm mt-1"
                 />
               </div>
 

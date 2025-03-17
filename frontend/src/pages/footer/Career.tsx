@@ -34,13 +34,13 @@ const Career = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <motion.div
-        className="bg-gradient-to-r from-red-600 to-red-800 py-12"
+        className="bg-gradient-to-r from-green-600 to-green-800 py-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-4xl font-bold text-white mb-2">Careers</h1>
-          <p className="text-red-200 text-lg">
+          <p className="text-green-200 text-lg">
             Explore exciting opportunities to join our team and make a
             difference.
           </p>
@@ -50,7 +50,7 @@ const Career = () => {
       {/* Job Listings Section */}
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
         {error && (
-          <div className="text-red-600 text-center">
+          <div className="text-green-600 text-center">
             Error loading job postings. Please try again later.
           </div>
         )}
@@ -134,7 +134,7 @@ const JobPosting = ({ job, onApply }: JobPostingProps) => {
           ) : (
             <Button
               onClick={onApply}
-              className="bg-red-600 text-white hover:bg-red-700"
+              className="bg-green-600 text-white hover:bg-green-700"
             >
               Apply Now
             </Button>
@@ -145,7 +145,7 @@ const JobPosting = ({ job, onApply }: JobPostingProps) => {
         <div className="p-6">
           <Button
             variant="link"
-            className="text-red-600 font-semibold mb-4"
+            className="text-green-600 font-semibold mb-4"
             onClick={toggleDetails}
           >
             {isOpen ? "Hide Details" : "View Details"}

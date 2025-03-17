@@ -19,6 +19,7 @@ const About = () => {
         const data = await aboutApi.getAbout();
         setAboutData(data.about[0]);
         setLoading(false);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
         setError("Failed to fetch about data");
         setLoading(false);
@@ -46,7 +47,7 @@ const About = () => {
       />
       <AboutMission missionsSection={aboutData.missionsSection} />
       <AboutServices servicesSection={aboutData.servicesSection} />
-      <div className="bg-red-800 py-0 px-0">
+      <div className="bg-green-100 py-0 px-0">
         <div className=" max-w-7xl mx-auto text-white">
           <div>
             <AboutVision visionSection={aboutData.visionSection} />
