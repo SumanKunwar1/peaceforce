@@ -41,7 +41,7 @@ const Tours: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <motion.div
-        className="bg-gradient-to-r from-green-100 to-green-200 py-12 mb-12"
+        className="bg-gradient-to-r from-green-600 to-green-700 py-12 mb-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

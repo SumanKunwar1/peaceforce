@@ -95,7 +95,7 @@ const DonationSection: React.FC<DonationSectionProps> = ({ heroImage }) => {
             <CardContent className="space-y-2 mt-4">
               <h4 className="font-semibold">Bank Transfer Details</h4>
               <p>
-                <strong>Beneficiary Name:</strong> B.T.M.C. Foundation
+                <strong>Beneficiary Name:</strong>PeaceForce
               </p>
               <p>
                 <strong>Bank Name:</strong> NMB Bank
@@ -107,7 +107,7 @@ const DonationSection: React.FC<DonationSectionProps> = ({ heroImage }) => {
                 <strong>A/C No.:</strong> 2222410016305780
               </p>
               <p>
-                <strong>Branch:</strong> Boudha Branch, Kathmandu, Nepal
+                <strong>Branch:</strong>Kathmandu, Nepal
               </p>
             </CardContent>
           </Card>
