@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const _controllers_1 = require("@controllers");
+const _middleware_1 = require("@middleware");
+const router = (0, express_1.Router)();
+router.post("/", _middleware_1.isAuthenticated, _middleware_1.validatePage, _controllers_1.PageController.createPage);
+router.get("/", _middleware_1.isAuthenticated, _controllers_1.PageController.getPages);
+router.get("/published/status", _controllers_1.PageController.getPublishedPages);
+router.get("/:slug", _controllers_1.PageController.getPageBySlug);
+router.patch("/:pageId", _middleware_1.isAuthenticated, _middleware_1.validatePage, _controllers_1.PageController.updatePage);
+router.delete("/:pageId", _middleware_1.isAuthenticated, _controllers_1.PageController.deletePage);
+exports.default = router;

@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const _controllers_1 = require("@controllers");
+const _middleware_1 = require("@middleware");
+const router = (0, express_1.Router)();
+router.post("/", _middleware_1.validateContact, _controllers_1.ContactController.createContact);
+router.get("/", _middleware_1.isAuthenticated, _controllers_1.ContactController.getContacts);
+router.get("/:contactId", _middleware_1.isAuthenticated, _controllers_1.ContactController.getContactById);
+router.delete("/:contactId", _middleware_1.isAuthenticated, _controllers_1.ContactController.deleteContact);
+exports.default = router;

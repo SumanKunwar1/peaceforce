@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const _controllers_1 = require("@controllers");
+const _middleware_1 = require("@middleware");
+const router = (0, express_1.Router)();
+router.post("/", _middleware_1.isAuthenticated, _middleware_1.validateMembership, _controllers_1.MembershipController.createMembership);
+router.patch("/:membershipId", _middleware_1.isAuthenticated, _middleware_1.validateMembership, _controllers_1.MembershipController.updateMembership);
+router.get("/", _controllers_1.MembershipController.getMemberships);
+router.get("/:membershipId", _controllers_1.MembershipController.getMembershipById);
+router.delete("/:membershipId", _middleware_1.isAuthenticated, _controllers_1.MembershipController.deleteMembership);
+exports.default = router;
