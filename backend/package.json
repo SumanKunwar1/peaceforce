@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node build/server.js",
-    "dev": "nodemon -r ts-node/register src/server.ts",
-    "build": "tsc",
+    "start": "node init && node build/server.js",
+    "dev": "node init && nodemon -r ts-node/register src/server.ts",
+    "build": "node init && tsc",
     "clean": "rimraf build",
     "test": "jest --detectOpenHandles"
   },
