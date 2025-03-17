@@ -54,9 +54,9 @@ const navigation = [
     href: "/admin/program-booking",
     icon: BookUp2Icon,
   },
-  { name: "Courses", href: "/admin/courses", icon: BookOpen },
+  { name: "Prevention Programs", href: "/admin/courses", icon: BookOpen },
   { name: "Enrollments", href: "/admin/enrollments", icon: BookOpenCheck },
-  { name: "Tours", href: "/admin/tours", icon: Map },
+  { name: "Community Action", href: "/admin/tours", icon: Map },
   { name: "Tour Bookings", href: "/admin/bookings", icon: BookUserIcon },
   { name: "Support Us", href: "/admin/support-us", icon: FaHandHoldingHeart },
   { name: "Events", href: "/admin/events", icon: CalendarCheck },
@@ -138,7 +138,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
               to="/admin/dashboard"
               className="text-white text-xl font-bold"
             >
-              BTMC Admin
+              PeaceForce Admin
             </Link>
             <Button
               variant="ghost"
