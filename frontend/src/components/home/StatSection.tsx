@@ -5,24 +5,26 @@ import { motion } from "framer-motion";
 const stats = [
   {
     icon: Clock,
-    endValue: 21,
+    endValue: 5,
     suffix: "+",
     label: "Years of Experience",
-    description: "in Buddhist Education",
+    description: "in Youth Empowerment & Violence Prevention",
   },
+
   {
     icon: Users,
-    endValue: 5000,
+    endValue: 10000,
     suffix: "+",
-    label: "Students Trained",
-    description: "from around the world",
+    label: "Youth Empowered",
+    description: "through Workshops, Mentoring, and Counselling",
   },
   {
     icon: Map,
     endValue: 300,
     suffix: "+",
-    label: "Pilgrimage Tours",
-    description: "successfully organized",
+    label: "Community Initiatives",
+    description:
+      "organized to combat youth violence and promote positive change",
   },
 ];
 
